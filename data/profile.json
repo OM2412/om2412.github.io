@@ -1,0 +1,136 @@
+{
+  "owner": "OM2412",
+  "name": "Om Singh Jadon",
+  "email": "omjadon242@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/om-singh-jadon-b92679314/",
+  "excludedRepositories": [
+    "OM2412",
+    "om2412.github.io",
+    "OnceTold-Memory",
+    "Cognifyz-Java-Development-Internship",
+    "DSA-Leetcode-Solution-Java",
+    "sentineops-ai"
+  ],
+  "projects": [
+    {
+      "id": "returntrail",
+      "number": "01",
+      "title": "ReturnTrail",
+      "tagline": "One pickup. Two stories.",
+      "genre": "Evidence / graph context",
+      "category": "team",
+      "art": "trail",
+      "repository": "OM2412/ReturnTrail",
+      "description": "Connect disputed return-pickup claims to their original sources. Compare evidence, inspect graph paths and keep follow-ups tied to the context they reviewed.",
+      "role": "Full-stack development with Ajeet Gadekar. Both of us contributed across the frontend and backend.",
+      "stack": [
+        "Java",
+        "Spring Boot",
+        "React",
+        "FalkorDB"
+      ],
+      "status": "Public demo",
+      "website": "https://returntrail-api.onrender.com",
+      "allowHomepageSync": true,
+      "video": "https://youtu.be/5lfysyQZOO0",
+      "decision": "A resolved task retains the sources it reviewed. New evidence can require a fresh follow-up instead of silently inheriting an earlier explanation.",
+      "lesson": "The agent could answer before using all required tools. Backend-enforced tool order and regression checks made the investigation sequence explicit.",
+      "boundary": "Fictional practice cases. Recorded claims and manual explanations do not independently establish fault."
+    },
+    {
+      "id": "oncetold",
+      "number": "02",
+      "title": "OnceTold",
+      "tagline": "Support that remembers.",
+      "genre": "Support / memory graph",
+      "category": "solo",
+      "art": "memory",
+      "repository": "OM2412/OnceTold",
+      "description": "Recall relevant customer history when a new support conversation begins, then write resolutions back to a customer-scoped Cognee memory graph.",
+      "role": "Solo build: the application, Java-to-FastAPI memory integration, interface and deployment work.",
+      "stack": [
+        "Spring Boot",
+        "React",
+        "FastAPI",
+        "Cognee"
+      ],
+      "status": "Hosting paused",
+      "website": null,
+      "allowHomepageSync": false,
+      "video": null,
+      "decision": "A separate FastAPI service bridges Java to Cognee. Remember, recall and resolution writes form a reusable memory loop.",
+      "lesson": "A default HTTP timeout interrupted memory calls. Deployment also needed persistent storage for H2 application data.",
+      "boundary": "The Railway allowance has ended, so the old live link is intentionally absent. Source and local setup remain available."
+    },
+    {
+      "id": "legal",
+      "number": "03",
+      "title": "Contract Analyzer",
+      "tagline": "Read between the terms.",
+      "genre": "Documents / source quotes",
+      "category": "documents",
+      "art": "contract",
+      "repository": "OM2412/legal-contract-analyzer",
+      "description": "Compare supported payment terms in an Agreement and Statement of Work, inspect source quotes and keep local AI suggestions separate from rule-based review.",
+      "role": "Built the document-review workflow, supported payment-term comparison and source-checked AI candidate handling for an academic project.",
+      "stack": [
+        "Java",
+        "PDF processing",
+        "Ollama",
+        "Tesseract OCR"
+      ],
+      "status": "Deployment planned",
+      "website": null,
+      "allowHomepageSync": true,
+      "video": null,
+      "decision": "AI candidates are displayed only after their days and unit match the supporting source quote. Suggestions do not automatically alter the rule verdict.",
+      "lesson": "Scanned and mixed PDFs need explicit OCR, page and upload limits. Exact source wording and legal interpretation are different questions.",
+      "boundary": "A focused payment-term prototype, not comprehensive legal review or legal advice. Inspect original documents and verify OCR text."
+    },
+    {
+      "id": "spidersense",
+      "number": "04",
+      "title": "SpiderSense",
+      "tagline": "Catch the signal.",
+      "genre": "Market / change detection",
+      "category": "team",
+      "art": "spider",
+      "repository": "yogeshsanodiya59-web/SpiderSense",
+      "description": "Collect competitor-page snapshots, calculate structured changes and add AI-assisted explanations to pricing, hiring and company-news signals.",
+      "role": "Shared frontend and backend development with Yogesh Sanodiya. Both teammates contributed across the stack.",
+      "stack": [
+        "Spring Boot",
+        "React / Next.js",
+        "PostgreSQL",
+        "Bright Data"
+      ],
+      "status": "Project website",
+      "website": "https://spider-sense-beta.vercel.app/",
+      "allowHomepageSync": true,
+      "video": null,
+      "decision": "Calculate deterministic differences before asking AI to explain them. Archived snapshots preserve the before-and-after context behind an alert.",
+      "lesson": "A separate demo mode simulates changes for short presentations. The repository distinguishes this from real Bright Data acquisition.",
+      "boundary": "A team hackathon prototype. Simulated demo scenarios are not observed market events."
+    }
+  ],
+  "milestones": [
+    {
+      "label": "BUILDING IN PUBLIC",
+      "title": "From hackathon brief to working demo",
+      "text": "ReturnTrail, OnceTold and SpiderSense explore connected context, memory and data workflows through WeMakeDevs events.",
+      "url": "https://github.com/OM2412/ReturnTrail"
+    },
+    {
+      "label": "ACADEMIC WORK",
+      "title": "A closer look at contract evidence",
+      "text": "A Java payment-term analyzer that keeps the supporting quotes visible and AI suggestions separate.",
+      "url": "https://github.com/OM2412/legal-contract-analyzer"
+    },
+    {
+      "label": "ONGOING PRACTICE",
+      "title": "Java, one problem at a time",
+      "text": "My structured Java DSA repository tracks the practice alongside the projects.",
+      "url": "https://github.com/OM2412/DSA-Leetcode-Solution-Java"
+    }
+  ]
+}
