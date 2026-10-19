@@ -40,3 +40,9 @@ The new PDF is an adapted portfolio resume, not a byte-for-byte copy of the Link
 - The owner requested removing Python from the resume. Python and FastAPI were removed from the skills list; the factual OnceTold project stack retains FastAPI.
 - The owner reported an NPTEL Distributed Systems certificate with a score of 71/100 and IIT Kanpur as the certifying institute. These resume fields come from that direct statement, not independent certificate verification. No certificate ID, issue date or badge was invented. The course teaching institute and certificate administrator are distinct; the course page lists Prof. Rajiv Misra, IIT Patna (https://onlinecourses.nptel.ac.in/e-learning/preview/noc26_cs115).
 - A fresh review of LinkedIn Certifications and Featured did not expose a Cognifyz internship certificate. The existing experience entry and six public assignments are retained, without a fabricated certificate link.
+
+## Uploaded evidence reviewed - 20 October 2026
+
+- Owner supplied an Internship Completion Certificate naming Cognifyz IT Solutions Pvt. Ltd., Java Development Intern, 24 June to 24 July 2026, issued 24 July 2026. The resume now follows those exact employer and date fields. The document was read and visually inspected; this is not independent issuer verification.
+- The supplied NPTEL PDF is the 20 September 2026 Distributed Systems hall ticket, not a score certificate. It does not verify the owner's reported 71/100 result or IIT Kanpur certificate. The existing score remains owner-reported; no badge or credential ID was added. The hall ticket was not published.
+- Original uploaded PDFs are not stored in this repository. The internship certificate is being added to LinkedIn at the owner's request; its direct upload requires the browser's file-upload permission.

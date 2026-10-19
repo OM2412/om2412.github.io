@@ -54,8 +54,8 @@ section('Technical skills')
 p('<b>Languages:</b> Java, SQL, JavaScript<br/><b>Backend:</b> Spring Boot, Spring Security, JWT, REST APIs, JPA/Hibernate<br/><b>Frontend and data:</b> React, Next.js, HTML/CSS, PostgreSQL, MySQL, H2<br/><b>Tools and foundations:</b> Git/GitHub, Maven, Docker, Render, Neon, DSA, OOP')
 
 section('Experience')
-p('Java Development Internship - Cognifyz Technologies | Jun-Jul 2026', 'entry')
-p('Remote, task-based Java assignments | ' + link('Work repository', 'https://github.com/OM2412/Cognifyz-Java-Development-Internship'), 'meta')
+p('Java Development Intern - Cognifyz IT Solutions Pvt. Ltd.', 'entry')
+p('24 Jun-24 Jul 2026 | Completion certificate issued 24 Jul 2026 | ' + link('Work repository', 'https://github.com/OM2412/Cognifyz-Java-Development-Internship'), 'meta')
 bullet('Completed Level 1 and Level 2 through six Java console applications, including a grade calculator, password utilities and Tic-Tac-Toe.')
 bullet('Applied input validation, strings, arrays, methods and game logic; documented the work with Git and GitHub.')
 
