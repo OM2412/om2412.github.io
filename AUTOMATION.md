@@ -17,7 +17,7 @@ This file is the durable instruction for the owner's requested unattended portfo
 3. For each eligible repository, use the canonical GitHub repository metadata response. Map these fields:
    - `id`, `full_name → fullName`, `name`, `description`, `html_url → source`, `homepage`, `language`, `pushed_at → pushedAt`, `created_at → createdAt`, `stargazers_count → stars`, `fork`, `archived`, `visibility`, `size`.
 4. Get up to three newest published releases from each eligible repository. Exclude drafts and prereleases. Keep `repository`, `name` (fallback `tag_name`), `tag`, `html_url → url`, `published_at → publishedAt`.
-5. Use only HTTPS website URLs without embedded credentials; disallow localhost/internal/private-address destinations. Do not infer deployment URLs from repository names or README examples. The browser renderer separately honours `allowHomepageSync: false`, so OnceTold remains paused until the owner changes that curated choice.
+5. Use only HTTPS website URLs without embedded credentials; disallow localhost/internal/private-address destinations. Do not infer deployment URLs from repository names or README examples. The browser renderer separately honours `allowHomepageSync: false`. OnceTold's owner-curated Render demo URL and status must remain as set in profile.json; never restore its expired Railway URL or infer uptime from metadata.
 
 ## File shape
 

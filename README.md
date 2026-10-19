@@ -11,7 +11,7 @@ The portrait is in the first screen on desktop and mobile. Work, source links an
 | Project | Contribution | Deployment presentation |
 | --- | --- | --- |
 | ReturnTrail | Full-stack with Ajeet Gadekar | Public demo and walkthrough |
-| OnceTold | Solo build | **Hosting paused**; code/local setup available; old Railway link omitted |
+| OnceTold | Solo build | [Public demo](https://oncetold-hrma.onrender.com); Render + Neon, fictional data only, free hosting may sleep |
 | Legal Contract Analyzer | Academic project | **Deployment planned**; no invented live URL |
 | SpiderSense | Shared frontend/backend with Yogesh Sanodiya | Project website and original repository |
 
@@ -26,7 +26,7 @@ A connected ChatGPT background task checks public GitHub metadata daily. Read th
 - Only public, non-fork, non-archived, non-empty repositories are eligible. Explicit exclusions live in `data/profile.json`.
 - The four featured posters, collaborator credits, detailed claims, certificates and achievements stay curated.
 - For a deployed project, put its HTTPS URL in the GitHub repository's **About → Website** field. The next changed snapshot can add it to a featured project when `allowHomepageSync` is true. A listed website is not a claim of verified uptime.
-- OnceTold has `allowHomepageSync: false`; stale metadata cannot silently restore its old live link.
+- OnceTold has `allowHomepageSync: false`; its verified Render URL is curated, so stale metadata cannot restore the expired Railway URL.
 - The scheduled writer updates only `data/github.json` and commits only when metadata changes. It does not manufacture daily commits merely to refresh a timestamp.
 - No GitHub token is embedded in the site; visitors request only the saved JSON files from this site. Browser/laptop uptime is not required for the cloud task.
 
