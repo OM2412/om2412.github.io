@@ -74,3 +74,11 @@ GitHub Pages publishes `main` from `/ (root)` using `.nojekyll`. No purchased do
 The portrait and actual ReturnTrail capture originate from the ReturnTrail repository; portrait preparation is recorded in its `docs/PHOTO-EDIT.md`. OnceTold's case study includes an actual owner-supplied portal screenshot. Other poster graphics are explicitly labelled illustrations. The film identity and WebGL scene are original code-based graphics, not Netflix/Stranger Things assets or an affiliation claim.
 
 AI assisted with portfolio implementation and writing. Project claims are grounded in the linked repositories and owner-supplied contributions.
+
+## Resume and profile evidence
+
+The first-screen resume link serves a selectable-text, one-page PDF at `assets/Om_Singh_Jadon_Resume.pdf`. It adapts the owner's LinkedIn resume with the current OnceTold hosting, ReturnTrail and correctly scoped team contributions. Public email and professional links are included; the phone number from the LinkedIn image is omitted.
+
+`data/profile-sources.md` records the evidence checked on 19 October 2026 and unresolved date/wording differences. Credentials and historical ranks remain curated. The CCE IIT Mandi program is continuing education alongside the MITS degree; the weekly branch result is historical. LeetCode counts are a dated check, not a live counter.
+
+To rebuild the PDF, install ReportLab and DejaVu Sans TTF fonts, then run `python3 scripts/build-resume.py`. Set `RESUME_FONT_DIR` when the fonts are stored elsewhere. Review the single-page rendering before replacing the published PDF.

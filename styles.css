@@ -15,3 +15,5 @@ dialog{padding:0;border:1px solid var(--line);border-radius:9px;background:var(-
 body.motion-paused .portrait-rig{transform:translate(-50%,-50%)}body.motion-paused .poster-button:hover{transform:none}
 
 .project-capture{margin:32px 0 0;padding-top:24px;border-top:1px solid var(--line)}.project-capture a{display:block}.project-capture img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:5px;background:var(--surface)}.project-capture figcaption{margin-top:10px;font-size:10px;line-height:1.7;color:var(--muted)}
+
+.hero-actions{flex-wrap:wrap}.hero-actions .resume-link{white-space:nowrap}

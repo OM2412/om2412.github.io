@@ -109,7 +109,7 @@ function renderProjects(profile, catalog) {
 
 function renderMilestones(profile) {
   const holder = $('#milestones'); holder.replaceChildren();
-  for (const m of profile.milestones || []) { const item = element('article', 'milestone'); item.append(element('p', 'eyebrow', m.label), element('h3', '', m.title), element('p', '', m.text)); const link = external('Explore the work ↗', m.url); if (link) item.append(link); holder.append(item); }
+  for (const m of profile.milestones || []) { const item = element('article', 'milestone'); item.append(element('p', 'eyebrow', m.label), element('h3', '', m.title), element('p', '', m.text)); const link = external(m.linkLabel || 'Explore the work ↗', m.url); if (link) item.append(link); holder.append(item); }
 }
 
 function renderGitHub(profile, catalog) {

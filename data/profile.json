@@ -57,7 +57,7 @@
       "status": "Public demo",
       "website": "https://oncetold-hrma.onrender.com",
       "allowHomepageSync": false,
-      "video": null,
+      "video": "https://www.youtube.com/watch?v=342vYrwRyYw",
       "decision": "A loopback-only FastAPI bridge connects Java to Cognee. Authenticated ticket access determines whose memory is recalled; resolutions feed the next conversation.",
       "lesson": "Cloud memory needed a bounded longer recall timeout. Render now uses dedicated Neon PostgreSQL so application records survive redeploys.",
       "boundary": "Fictional demo data only. Agent registration is open. Free hosting can sleep and AI quotas apply; old Railway records were not imported.",
@@ -129,10 +129,37 @@
       "url": "https://github.com/OM2412/legal-contract-analyzer"
     },
     {
-      "label": "ONGOING PRACTICE",
-      "title": "Java, one problem at a time",
-      "text": "My structured Java DSA repository tracks the practice alongside the projects.",
-      "url": "https://github.com/OM2412/DSA-Leetcode-Solution-Java"
+      "label": "PROBLEM SOLVING",
+      "title": "150+ LeetCode problems",
+      "text": "Profile checked on 19 October 2026: 157 solved problems and the 50 Days Badge 2026. My Java DSA repository records practice by topic.",
+      "url": "https://leetcode.com/u/Omjadon_24/",
+      "linkLabel": "View coding profile ↗"
+    },
+    {
+      "label": "CONTINUING EDUCATION",
+      "title": "CSE foundations at CCE, IIT Mandi",
+      "text": "Three-course Minor Program in CSE and Advanced Technologies: programming, data structures and algorithms, systems and databases. Continuing education alongside my B.Tech at MITS.",
+      "url": "https://www.linkedin.com/in/om-singh-jadon-b92679314/details/certifications/",
+      "linkLabel": "View credential listing ↗"
+    },
+    {
+      "label": "JAVA INTERNSHIP",
+      "title": "Cognifyz Technologies",
+      "text": "June–July 2026: completed Level 1 and Level 2 through six Java console applications, practising input validation, strings, arrays, methods and game logic.",
+      "url": "https://github.com/OM2412/Cognifyz-Java-Development-Internship",
+      "linkLabel": "Inspect the assignments ↗"
+    },
+    {
+      "label": "HISTORICAL CODING RESULT",
+      "title": "Branch #1 · Coder of the week",
+      "text": "The featured CP Track screenshot records a branch-rank #1, Coder of the Week result. This is a historical weekly result.",
+      "url": "https://www.linkedin.com/in/om-singh-jadon-b92679314/details/featured/",
+      "linkLabel": "View the featured proof ↗"
     }
-  ]
+  ],
+  "resume": {
+    "url": "assets/Om_Singh_Jadon_Resume.pdf",
+    "updatedAt": "2026-10-19",
+    "source": "https://www.linkedin.com/in/om-singh-jadon-b92679314/details/featured/"
+  }
 }
