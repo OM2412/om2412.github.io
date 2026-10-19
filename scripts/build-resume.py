@@ -79,7 +79,7 @@ section('Education')
 p('<b>B.Tech, Computer Science and Business Systems - MITS Gwalior</b> | 2024-2028')
 
 section('Certifications')
-p('<b>Distributed Systems - NPTEL / IIT Kanpur</b> | 2026 | Score: 71/100')
+p('<b>Distributed Systems - NPTEL / IIT Kanpur</b> | Elite | 71%<br/>Jul-Sep 2026, 8-week course', 'body')
 p('<b>Minor Program in CSE and Advanced Technologies - CCE, IIT Mandi</b><br/>Continuing education: programming, data structures and algorithms, systems and databases. Program credential issued Feb 2026.', 'body')
 
 section('Additional')

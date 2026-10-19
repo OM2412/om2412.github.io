@@ -46,3 +46,11 @@ The new PDF is an adapted portfolio resume, not a byte-for-byte copy of the Link
 - Owner supplied an Internship Completion Certificate naming Cognifyz IT Solutions Pvt. Ltd., Java Development Intern, 24 June to 24 July 2026, issued 24 July 2026. The resume now follows those exact employer and date fields. The document was read and visually inspected; this is not independent issuer verification.
 - The supplied NPTEL PDF is the 20 September 2026 Distributed Systems hall ticket, not a score certificate. It does not verify the owner's reported 71/100 result or IIT Kanpur certificate. The existing score remains owner-reported; no badge or credential ID was added. The hall ticket was not published.
 - Original uploaded PDFs are not stored in this repository. The internship certificate is being added to LinkedIn at the owner's request; its direct upload requires the browser's file-upload permission.
+
+## NPTEL result certificate supplied - 20 October 2026
+
+- This supersedes the earlier owner-reported NPTEL result and hall-ticket-only evidence. The owner supplied the actual NPTEL Online Certification certificate for Distributed Systems: Elite classification, consolidated score 71%, July-September 2026, eight weeks. The certificate and its signatories identify IIT Kanpur.
+- Online assignments: 24.17/25; proctored exam: 46.5/75. The certificate prints the consolidated result as 71%, which is used without re-rounding. It recommends three credits; no earned degree-credit or ranking claim was added.
+- The certificate was read and visually reviewed. No issue date was inferred from the course cycle, and this is not independent issuer-portal validation. Neither the result certificate nor the hall ticket is stored in this public repository.
+- Resume and portfolio now include Elite and the exact course cycle. The LinkedIn credential entry was added and read back successfully. Direct PDF attachments remain blocked until the browser file-upload permission is enabled.
+- The owner explicitly approved publishing the updated resume, including its name, email and professional details, to OM2412/om2412.github.io and the public portfolio.
