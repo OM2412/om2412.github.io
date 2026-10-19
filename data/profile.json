@@ -60,7 +60,9 @@
       "video": null,
       "decision": "A loopback-only FastAPI bridge connects Java to Cognee. Authenticated ticket access determines whose memory is recalled; resolutions feed the next conversation.",
       "lesson": "Cloud memory needed a bounded longer recall timeout. Render now uses dedicated Neon PostgreSQL so application records survive redeploys.",
-      "boundary": "Fictional demo data only. Agent registration is open. Free hosting can sleep and AI quotas apply; old Railway records were not imported."
+      "boundary": "Fictional demo data only. Agent registration is open. Free hosting can sleep and AI quotas apply; old Railway records were not imported.",
+      "screenshot": "assets/oncetold-portal.webp",
+      "screenshotAlt": "Actual OnceTold sign-in portal with customer and support-agent access"
     },
     {
       "id": "legal",
@@ -104,9 +106,9 @@
         "PostgreSQL",
         "Bright Data"
       ],
-      "status": "Project website",
+      "status": "Public demo",
       "website": "https://spider-sense-beta.vercel.app/",
-      "allowHomepageSync": true,
+      "allowHomepageSync": false,
       "video": null,
       "decision": "Calculate deterministic differences before asking AI to explain them. Archived snapshots preserve the before-and-after context behind an alert.",
       "lesson": "A separate demo mode simulates changes for short presentations. The repository distinguishes this from real Bright Data acquisition.",

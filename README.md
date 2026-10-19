@@ -26,7 +26,7 @@ A connected ChatGPT background task checks public GitHub metadata daily. Read th
 - Only public, non-fork, non-archived, non-empty repositories are eligible. Explicit exclusions live in `data/profile.json`.
 - The four featured posters, collaborator credits, detailed claims, certificates and achievements stay curated.
 - For a deployed project, put its HTTPS URL in the GitHub repository's **About → Website** field. The next changed snapshot can add it to a featured project when `allowHomepageSync` is true. A listed website is not a claim of verified uptime.
-- OnceTold has `allowHomepageSync: false`; its verified Render URL is curated, so stale metadata cannot restore the expired Railway URL.
+- OnceTold and SpiderSense have `allowHomepageSync: false`; their verified demo URLs are curated, so stale repository metadata cannot restore retired deployment URLs.
 - The scheduled writer updates only `data/github.json` and commits only when metadata changes. It does not manufacture daily commits merely to refresh a timestamp.
 - No GitHub token is embedded in the site; visitors request only the saved JSON files from this site. Browser/laptop uptime is not required for the cloud task.
 
@@ -71,6 +71,6 @@ GitHub Pages publishes `main` from `/ (root)` using `.nojekyll`. No purchased do
 
 ## Attribution
 
-The portrait and actual ReturnTrail capture originate from the ReturnTrail repository; portrait preparation is recorded in its `docs/PHOTO-EDIT.md`. Other poster graphics are explicitly labelled illustrations. The film identity and WebGL scene are original code-based graphics, not Netflix/Stranger Things assets or an affiliation claim.
+The portrait and actual ReturnTrail capture originate from the ReturnTrail repository; portrait preparation is recorded in its `docs/PHOTO-EDIT.md`. OnceTold's case study includes an actual owner-supplied portal screenshot. Other poster graphics are explicitly labelled illustrations. The film identity and WebGL scene are original code-based graphics, not Netflix/Stranger Things assets or an affiliation claim.
 
 AI assisted with portfolio implementation and writing. Project claims are grounded in the linked repositories and owner-supplied contributions.

@@ -81,7 +81,15 @@ function openProject(project) {
   const links = element('div', 'dialog-links'); const source = external('Source & setup ↗', project.source); if (source) links.append(source);
   if (project.website) links.append(external(project.status === 'Public demo' ? 'Open demo ↗' : 'Project website ↗', project.website));
   if (project.video) links.append(external('Watch walkthrough ↗', project.video));
-  copy.append(links); grid.append(artwork(project), copy); content.append(grid); document.body.classList.add('dialog-open'); dialog.showModal();
+  copy.append(links); grid.append(artwork(project), copy); content.append(grid);
+  if (typeof project.screenshot === 'string' && /^assets\/[a-z0-9-]+\.webp$/.test(project.screenshot)) {
+    const figure = element('figure', 'project-capture'), link = element('a');
+    link.href = project.screenshot; link.target = '_blank'; link.rel = 'noopener noreferrer';
+    const image = element('img'); image.src = project.screenshot; image.alt = project.screenshotAlt || project.title + ' application screenshot';
+    image.loading = 'lazy'; image.width = 1561; image.height = 956;
+    link.append(image); figure.append(link, element('figcaption', '', 'Actual ' + project.title + ' portal · open the image at full size ↗')); content.append(figure);
+  }
+  document.body.classList.add('dialog-open'); dialog.showModal();
 }
 
 function renderProjects(profile, catalog) {
