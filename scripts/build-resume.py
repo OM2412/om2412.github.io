@@ -51,7 +51,7 @@ section('Professional summary')
 p('B.Tech student in Computer Science and Business Systems (2028), building Java REST APIs, React interfaces and AI-assisted workflows. Shipped OnceTold and co-built ReturnTrail and SpiderSense, with hands-on debugging, database persistence and deployment experience.')
 
 section('Technical skills')
-p('<b>Languages:</b> Java, SQL, Python, JavaScript<br/><b>Backend:</b> Spring Boot, Spring Security, JWT, REST APIs, JPA/Hibernate, FastAPI<br/><b>Frontend and data:</b> React, Next.js, HTML/CSS, PostgreSQL, MySQL, H2<br/><b>Tools and foundations:</b> Git/GitHub, Maven, Docker, Render, Neon, DSA, OOP')
+p('<b>Languages:</b> Java, SQL, JavaScript<br/><b>Backend:</b> Spring Boot, Spring Security, JWT, REST APIs, JPA/Hibernate<br/><b>Frontend and data:</b> React, Next.js, HTML/CSS, PostgreSQL, MySQL, H2<br/><b>Tools and foundations:</b> Git/GitHub, Maven, Docker, Render, Neon, DSA, OOP')
 
 section('Experience')
 p('Java Development Internship - Cognifyz Technologies | Jun-Jul 2026', 'entry')
@@ -75,8 +75,11 @@ p('Next.js, Spring Boot, PostgreSQL, Bright Data, AI analysis | With Yogesh Sano
 bullet('Contributed across the frontend and backend to API integration, stored snapshots, deterministic change detection and AI-assisted explanations.')
 bullet('Integrated the Bright Data acquisition workflow; kept simulated presentation scenarios distinct from real scraping.')
 
-section('Education and continuing education')
+section('Education')
 p('<b>B.Tech, Computer Science and Business Systems - MITS Gwalior</b> | 2024-2028')
+
+section('Certifications')
+p('<b>Distributed Systems - NPTEL / IIT Kanpur</b> | 2026 | Score: 71/100')
 p('<b>Minor Program in CSE and Advanced Technologies - CCE, IIT Mandi</b><br/>Continuing education: programming, data structures and algorithms, systems and databases. Program credential issued Feb 2026.', 'body')
 
 section('Additional')

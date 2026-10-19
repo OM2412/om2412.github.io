@@ -34,3 +34,9 @@ Checked on 19 October 2026, at the owner's request to reuse LinkedIn content in 
 - Phone, private analytics, follower counts, school marks and semester GPA were not copied into the public portfolio PDF.
 
 The new PDF is an adapted portfolio resume, not a byte-for-byte copy of the LinkedIn image. Its text is manually curated in scripts/build-resume.py.
+
+## Owner-directed resume revision - 20 October 2026
+
+- The owner requested removing Python from the resume. Python and FastAPI were removed from the skills list; the factual OnceTold project stack retains FastAPI.
+- The owner reported an NPTEL Distributed Systems certificate with a score of 71/100 and IIT Kanpur as the certifying institute. These resume fields come from that direct statement, not independent certificate verification. No certificate ID, issue date or badge was invented. The course teaching institute and certificate administrator are distinct; the course page lists Prof. Rajiv Misra, IIT Patna (https://onlinecourses.nptel.ac.in/e-learning/preview/noc26_cs115).
+- A fresh review of LinkedIn Certifications and Featured did not expose a Cognifyz internship certificate. The existing experience entry and six public assignments are retained, without a fabricated certificate link.
