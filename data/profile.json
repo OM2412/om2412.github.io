@@ -81,8 +81,8 @@
         "Ollama",
         "Tesseract OCR"
       ],
-      "status": "Deployment planned",
-      "website": null,
+      "status": "Public demo",
+      "website": "https://folio-accounts-preview.onrender.com/",
       "allowHomepageSync": true,
       "video": null,
       "decision": "AI candidates are displayed only after their days and unit match the supporting source quote. Suggestions do not automatically alter the rule verdict.",

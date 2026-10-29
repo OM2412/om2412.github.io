@@ -12,7 +12,7 @@ The portrait is in the first screen on desktop and mobile. Work, source links an
 | --- | --- | --- |
 | ReturnTrail | Full-stack with Ajeet Gadekar | Public demo and walkthrough |
 | OnceTold | Solo build | [Public demo](https://oncetold-hrma.onrender.com); Render + Neon, fictional data only, free hosting may sleep |
-| Legal Contract Analyzer | Academic project | **Deployment planned**; no invented live URL |
+| Legal Contract Analyzer | Academic project | [Live preview](https://folio-accounts-preview.onrender.com/); not legal advice, verify extracted text |
 | SpiderSense | Shared frontend/backend with Yogesh Sanodiya | Project website and original repository |
 
 Project descriptions and engineering notes are curated. No clients, revenue, awards or impact metrics are fabricated.
@@ -26,7 +26,7 @@ A connected ChatGPT background task checks public GitHub metadata daily. Read th
 - Only public, non-fork, non-archived, non-empty repositories are eligible. Explicit exclusions live in `data/profile.json`.
 - The four featured posters, collaborator credits, detailed claims, certificates and achievements stay curated.
 - For a deployed project, put its HTTPS URL in the GitHub repository's **About → Website** field. The next changed snapshot can add it to a featured project when `allowHomepageSync` is true. A listed website is not a claim of verified uptime.
-- OnceTold and SpiderSense have `allowHomepageSync: false`; their verified demo URLs are curated, so stale repository metadata cannot restore retired deployment URLs.
+- OnceTold and SpiderSense have `allowHomepageSync: false`; their verified demo URLs are curated, so stale repository metadata cannot restore retired deployment URLs. ReturnTrail and Contract Analyzer keep their curated deployment URLs in `data/profile.json`; the analyzer preview is not legal advice.
 - The scheduled writer updates only `data/github.json` and commits only when metadata changes. It does not manufacture daily commits merely to refresh a timestamp.
 - No GitHub token is embedded in the site; visitors request only the saved JSON files from this site. Browser/laptop uptime is not required for the cloud task.
 
