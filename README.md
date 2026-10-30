@@ -77,7 +77,7 @@ AI assisted with portfolio implementation and writing. Project claims are ground
 
 ## Resume and profile evidence
 
-The first-screen resume link serves a selectable-text, one-page PDF at `assets/Om_Singh_Jadon_Resume.pdf`. It adapts the owner's LinkedIn resume with the current OnceTold hosting, ReturnTrail and correctly scoped team contributions. Public email and professional links are included; the phone number from the LinkedIn image is omitted.
+The first-screen resume link downloads the owner-supplied `Om_Singh_Jadon_Backend_Resume_Final.docx` from OneDrive. The link uses OneDrive's download parameter so visitors receive the updated backend resume.
 
 `data/profile-sources.md` records the evidence checked on 19 October 2026 and unresolved date/wording differences. Credentials and historical ranks remain curated. The CCE IIT Mandi program is continuing education alongside the MITS degree; the weekly branch result is historical. LeetCode counts are a dated check, not a live counter.
 
