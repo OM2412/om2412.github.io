@@ -30,7 +30,7 @@
         "FalkorDB"
       ],
       "status": "Hosting paused",
-      "website": "https://om2412.github.io/project-preview.html?id=returntrail",
+      "website": null,
       "allowHomepageSync": true,
       "video": "https://youtu.be/5lfysyQZOO0",
       "decision": "A resolved task retains the sources it reviewed. New evidence can require a fresh follow-up instead of silently inheriting an earlier explanation.",
@@ -55,7 +55,7 @@
         "Cognee"
       ],
       "status": "Hosting paused",
-      "website": "https://om2412.github.io/project-preview.html?id=oncetold",
+      "website": null,
       "allowHomepageSync": false,
       "video": "https://www.youtube.com/watch?v=342vYrwRyYw",
       "decision": "A loopback-only FastAPI bridge connects Java to Cognee. Authenticated ticket access determines whose memory is recalled; resolutions feed the next conversation.",
@@ -82,7 +82,7 @@
         "Tesseract OCR"
       ],
       "status": "Hosting paused",
-      "website": "https://om2412.github.io/project-preview.html?id=legal",
+      "website": null,
       "allowHomepageSync": true,
       "video": null,
       "decision": "AI candidates are displayed only after their days and unit match the supporting source quote. Suggestions do not automatically alter the rule verdict.",
