@@ -29,13 +29,13 @@
         "React",
         "FalkorDB"
       ],
-      "status": "Public demo",
-      "website": "https://returntrail-api.onrender.com",
+      "status": "Hosting paused",
+      "website": null,
       "allowHomepageSync": true,
       "video": "https://youtu.be/5lfysyQZOO0",
       "decision": "A resolved task retains the sources it reviewed. New evidence can require a fresh follow-up instead of silently inheriting an earlier explanation.",
       "lesson": "The agent could answer before using all required tools. Backend-enforced tool order and regression checks made the investigation sequence explicit.",
-      "boundary": "Fictional practice cases. Recorded claims and manual explanations do not independently establish fault."
+      "boundary": "Fictional practice cases. Recorded claims and manual explanations do not independently establish fault. Live backend deployment is temporarily unavailable; use the source repository and recorded walkthrough to review the project."
     },
     {
       "id": "oncetold",
@@ -54,13 +54,13 @@
         "FastAPI",
         "Cognee"
       ],
-      "status": "Public demo",
-      "website": "https://oncetold-hrma.onrender.com",
+      "status": "Hosting paused",
+      "website": null,
       "allowHomepageSync": false,
       "video": "https://www.youtube.com/watch?v=342vYrwRyYw",
       "decision": "A loopback-only FastAPI bridge connects Java to Cognee. Authenticated ticket access determines whose memory is recalled; resolutions feed the next conversation.",
       "lesson": "Cloud memory needed a bounded longer recall timeout. Render now uses dedicated Neon PostgreSQL so application records survive redeploys.",
-      "boundary": "Fictional demo data only. Agent registration is open. Free hosting can sleep and AI quotas apply; old Railway records were not imported.",
+      "boundary": "Fictional demo data only. Agent registration is open. Free hosting can sleep and AI quotas apply; old Railway records were not imported. Live backend deployment is temporarily unavailable; use the source repository and recorded walkthrough to review the project.",
       "screenshot": "assets/oncetold-portal.webp",
       "screenshotAlt": "Actual OnceTold sign-in portal with customer and support-agent access"
     },
@@ -81,13 +81,13 @@
         "Ollama",
         "Tesseract OCR"
       ],
-      "status": "Public demo",
-      "website": "https://folio-accounts-preview.onrender.com/",
+      "status": "Hosting paused",
+      "website": null,
       "allowHomepageSync": true,
       "video": null,
       "decision": "AI candidates are displayed only after their days and unit match the supporting source quote. Suggestions do not automatically alter the rule verdict.",
       "lesson": "Scanned and mixed PDFs need explicit OCR, page and upload limits. Exact source wording and legal interpretation are different questions.",
-      "boundary": "A focused payment-term prototype, not comprehensive legal review or legal advice. Inspect original documents and verify OCR text."
+      "boundary": "A focused payment-term prototype, not comprehensive legal review or legal advice. Inspect original documents and verify OCR text. Live backend deployment is temporarily unavailable; use the source repository to review the project."
     },
     {
       "id": "spidersense",
