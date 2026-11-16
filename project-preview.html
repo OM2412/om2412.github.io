@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark"><title>Project case study · Om Singh Jadon</title>
+<style>
+:root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,sans-serif;color:#f7f9ff;background:#090d17}*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 80% -20%,#203a62 0,transparent 55%),#090d17}a{color:inherit}header{border-bottom:1px solid #2c3548;padding:20px max(24px,calc((100vw - 960px)/2))}header a{text-decoration:none;font-weight:700}main{max-width:960px;margin:auto;padding:55px 24px 90px}.eyebrow{color:#8fbffb;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700}h1{font-size:clamp(2.8rem,7vw,5.1rem);letter-spacing:-.055em;line-height:1.03;margin:16px 0}h2{font-size:1.2rem}.lead{font-size:1.23rem;line-height:1.6;color:#ccd5e2;max-width:740px}.notice{background:#26314c;border:1px solid #5c6c91;padding:15px 18px;border-radius:13px;margin:30px 0;color:#e1e9fa}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 40px}.button{display:inline-flex;padding:13px 20px;border-radius:10px;text-decoration:none;background:#f0bd71;color:#142032;font-weight:750}.button.secondary{background:#242f44;color:#f3f7ff;border:1px solid #485a78}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.panel{background:#141c2b;border:1px solid #2b3a52;border-radius:17px;padding:24px;line-height:1.65}.panel p{color:#cbd4e2}.stack{display:flex;flex-wrap:wrap;gap:9px;margin:18px 0 30px}.chip{border:1px solid #466088;border-radius:99px;padding:7px 12px;color:#d3e5ff;font-size:.86rem}.capture{margin-top:24px;max-width:780px}.capture img{width:100%;border:1px solid #3c4e67;border-radius:14px}.capture figcaption{color:#b2bdd0;font-size:.85rem;margin-top:10px}footer{border-top:1px solid #2c3548;padding:24px;color:#9ba8bb;font-size:.87rem}@media(max-width:650px){main{padding-top:36px}.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><a href="/">← OM SINGH JADON / PORTFOLIO</a></header>
+<main id="main"><p class="eyebrow">Loading project case study…</p></main>
+<footer><div style="max-width:960px;margin:auto">Portfolio case study · Source code and recorded walkthrough are separate from the live backend.</div></footer>
+<script type="module">
+const allowed=new Set(['oncetold','returntrail','legal']); const id=new URLSearchParams(location.search).get('id');
+const main=document.querySelector('#main'); const el=(tag,cls,txt)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(txt!==undefined)n.textContent=txt;return n};
+function link(label,url,secondary=false){if(!url)return null;const parsed=new URL(url,location.origin);if(!['https:','http:'].includes(parsed.protocol))return null;const a=el('a','button'+(secondary?' secondary':''),label);a.href=parsed.href;a.target='_blank';a.rel='noopener noreferrer';return a}
+if(!allowed.has(id)){main.replaceChildren(el('h1','','Project not found'),link('See portfolio',location.origin));}
+else{
+try{
+const response=await fetch('/data/profile.json',{cache:'no-cache'});if(!response.ok)throw Error('Profile unavailable');
+const profile=await response.json();const p=profile.projects.find(item=>item.id===id);if(!p)throw Error('Missing project');
+document.title=p.title+' · Project case study · Om Singh Jadon';
+const eyebrow=el('p','eyebrow','RECRUITER PROJECT BRIEF / '+p.number);
+const title=el('h1','',p.title);const lead=el('p','lead',p.description);
+const notice=el('div','notice','Live backend temporarily unavailable on its original Render host. This page is a continuously accessible technical case study, not a simulation of live API functionality.');
+const actions=el('div','actions');for(const a of [link('Explore source & setup ↗','https://github.com/'+p.repository),link('Watch recorded walkthrough ↗',p.video,true)])if(a)actions.append(a);
+const stack=el('div','stack');(p.stack||[]).forEach(t=>stack.append(el('span','chip',t)));
+const grid=el('section','grid');for(const [heading,value] of [['Engineering decision',p.decision],['My contribution',p.role],['Lessons learned',p.lesson],['Scope and limitations',p.boundary]]){const panel=el('article','panel');panel.append(el('h2','',heading),el('p','',value));grid.append(panel);}
+main.replaceChildren(eyebrow,title,lead,notice,actions,el('h2','','Technology stack'),stack,grid);
+if(p.screenshot&&/^assets\/[a-z0-9-]+\.webp$/.test(p.screenshot)){const figure=el('figure','capture');const img=el('img');img.src='/'+p.screenshot;img.alt=p.screenshotAlt||p.title+' screenshot';img.loading='lazy';figure.append(img,el('figcaption','','Captured application interface (not a live running backend).'));main.append(figure);}
+}catch{main.replaceChildren(el('h1','','Case study temporarily unavailable'),el('p','lead','You can still inspect the source repository.'),link('GitHub repositories ↗','https://github.com/OM2412'));}
+}
+</script>
+</body></html>
