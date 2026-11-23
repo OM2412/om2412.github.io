@@ -80,6 +80,7 @@ function openProject(project) {
   copy.append(element('p', 'boundary', project.boundary));
   const links = element('div', 'dialog-links'); const source = external('Source & setup ↗', project.source); if (source) links.append(source);
   if (project.website) links.append(external(project.status === 'Public demo' ? 'Open demo ↗' : 'Project website ↗', project.website));
+  if (project.preview) { const preview = external((project.previewLabel || 'Alternative deployment') + ' ↗', project.preview); if (preview) links.append(preview); }
   if (project.video) links.append(external('Watch walkthrough ↗', project.video));
   copy.append(links); grid.append(artwork(project), copy); content.append(grid);
   if (typeof project.screenshot === 'string' && /^assets\/[a-z0-9-]+\.webp$/.test(project.screenshot)) {
@@ -99,8 +100,8 @@ function renderProjects(profile, catalog) {
     const button = element('button', 'poster-button'); button.type = 'button'; button.setAttribute('aria-label', 'Open ' + project.title + ' case study'); button.append(artwork(project)); button.addEventListener('click', () => openProject(project));
     const meta = element('div', 'card-meta'); const status = element('span', 'project-status' + (project.status === 'Hosting paused' ? ' paused' : project.status === 'Deployment planned' ? ' planned' : ''), project.status); meta.append(status, element('span', '', project.category === 'team' ? 'TEAM BUILD' : project.category === 'solo' ? 'SOLO BUILD' : 'ACADEMIC'));
     const caption = element('p', 'card-caption', project.genre); const links = element('div', 'card-links'); links.append(external('Source ↗', project.source));
-    if (project.website) links.append(external(project.status === 'Public demo' ? 'Demo ↗' : 'Website ↗', project.website));
-    else links.append(external('Local setup ↗', project.source + '#readme'));
+    if (project.website) { const live = external(project.status.startsWith('Live demo') || project.status === 'Public demo' ? 'Live demo ↗' : 'Website ↗', project.website); if (live) links.append(live); }
+    else { const setup = external('Local setup ↗', project.source + '#readme'); if (setup) links.append(setup); }
     card.append(button, meta, caption, links); reel.append(card);
   });
   $('#catalog-fallback').hidden = true; const filters = $('#project-filters'); filters.hidden = false; filters.querySelector('[data-filter="all"] span').textContent = String(profile.projects.length).padStart(2, '0');
