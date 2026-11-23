@@ -204,7 +204,7 @@ function renderGitHub(profile, catalog) {
   $('#repo-empty').hidden = rows.length > 0;
   const activities = $('#activity-list'); activities.replaceChildren();
   for (const item of activityItems(profile, catalog)) { const row = element('div', 'activity-item'), time = element('time', '', dateLabel(item.date)); time.dateTime = item.date; row.append(time, external(item.title + ' ↗', item.url), element('small', '', item.kind)); activities.append(row); }
-  const valid = Number.isFinite(Date.parse(catalog.checkedAt)); $('#sync-status').textContent = valid ? 'SAVED GITHUB SNAPSHOT / ' + dateLabel(catalog.checkedAt) + ' / daily refresh' : 'Saved GitHub snapshot. Refresh information is unavailable.';
+  const valid = Number.isFinite(Date.parse(catalog.checkedAt)); $('#sync-status').textContent = valid ? 'SAVED GITHUB SNAPSHOT / ' + dateLabel(catalog.checkedAt) + ' / public metadata archive' : 'Saved GitHub snapshot. Refresh information is unavailable.';
 }
 
 async function loadContent() {
