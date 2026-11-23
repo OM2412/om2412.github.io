@@ -1,6 +1,6 @@
 # Om Singh Jadon — The Developer's Cut
 
-> **Current project URLs (2026-11-23 repository documentation):** [Portfolio](https://om2412.github.io/) · [Folio](https://folio-c4no.onrender.com/) · [ReturnTrail](https://returntrail-api.onrender.com/) · [OnceTold](https://oncetold.pages.dev/) · [OnceTold synthetic tour](https://oncetold.pages.dev/demo.html).  
+> **Current project URLs (2026-11-23 repository documentation):** [Portfolio](https://om2412.github.io/) · [Folio](https://folio-c4no.onrender.com/) · [ReturnTrail](https://returntrail.onrender.com/) · [OnceTold Render](https://oncetold-y69f.onrender.com/) · [OnceTold Cloudflare](https://oncetold.pages.dev/) · [OnceTold synthetic tour](https://oncetold.pages.dev/demo.html).  
 > These are published targets; this README update does not certify uptime at every third-party host. **Note:** `data/profile.json` contains curated status/preview overrides; updating README links alone does not change the live portfolio cards.
 
 
@@ -14,8 +14,8 @@ The portrait is in the first screen on desktop and mobile. Work, source links an
 
 | Project | Contribution | Deployment presentation |
 | --- | --- | --- |
-| ReturnTrail | Full-stack with Ajeet Gadekar | Public demo and walkthrough |
-| OnceTold | Solo build | [Published app](https://oncetold.pages.dev/) · [Synthetic tour](https://oncetold.pages.dev/demo.html); Render + Neon, fictional data only, free hosting may sleep |
+| ReturnTrail | Full-stack with Ajeet Gadekar | [Render demo](https://returntrail.onrender.com/) · [Cloudflare D1 preview](https://returntrail-preview-api.omjadon242-67c.workers.dev/) · [Walkthrough](https://youtu.be/5lfysyQZOO0); original hosted FalkorDB instance expired |
+| OnceTold | Solo build | [Render app](https://oncetold-y69f.onrender.com/) · [Cloudflare frontend](https://oncetold.pages.dev/) · [Synthetic tour](https://oncetold.pages.dev/demo.html); Render + Neon, fictional data only, free hosting may sleep |
 | Legal Contract Analyzer | Academic project | [Live Folio](https://folio-c4no.onrender.com/); not legal advice, verify extracted text |
 | SpiderSense | Shared frontend/backend with Yogesh Sanodiya | Project website and original repository |
 
@@ -30,7 +30,7 @@ A connected ChatGPT background task checks public GitHub metadata daily. Read th
 - Only public, non-fork, non-archived, non-empty repositories are eligible. Explicit exclusions live in `data/profile.json`.
 - The four featured posters, collaborator credits, detailed claims, certificates and achievements stay curated.
 - For a deployed project, put its HTTPS URL in the GitHub repository's **About → Website** field. The next changed snapshot can add it to a featured project when `allowHomepageSync` is true. A listed website is not a claim of verified uptime.
-- OnceTold and SpiderSense have `allowHomepageSync: false`; their verified demo URLs are curated, so stale repository metadata cannot restore retired deployment URLs. ReturnTrail and Contract Analyzer keep their curated deployment URLs in `data/profile.json`; the analyzer preview is not legal advice.
+- Featured projects have `allowHomepageSync: false` when their deployment URLs are owner-curated; OnceTold and SpiderSense also use curated links; their verified demo URLs are curated, so stale repository metadata cannot restore retired deployment URLs. ReturnTrail and Folio keep their curated deployment URLs in `data/profile.json`; the analyzer preview is not legal advice.
 - The scheduled writer updates only `data/github.json` and commits only when metadata changes. It does not manufacture daily commits merely to refresh a timestamp.
 - No GitHub token is embedded in the site; visitors request only the saved JSON files from this site. Browser/laptop uptime is not required for the cloud task.
 
