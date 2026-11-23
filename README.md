@@ -73,12 +73,20 @@ The email-draft helper opens the visitor's email app. It does not send or store 
 - Native accessible dialogs, keyboard focus/close behavior, semantic labels and ordinary source/contact links.
 - No framework runtime, paid API, analytics or backend.
 
+## Accessibility and QA
+
+The portfolio includes semantic section headings, a keyboard skip link, reduced-motion support, native project dialogs, vetted HTTPS links and responsive card layouts. The November 2026 accessibility pass corrected five missing section-heading IDs and improved narrow-screen poster layout, navigation sizing and link targets.
+
+[Portfolio quality GitHub Actions](.github/workflows/portfolio-quality.yml) runs on pushes to `main` and pull requests. It checks JavaScript syntax, project/data correctness, source-image metadata and structural accessibility with `scripts/catalog.test.mjs` and `scripts/portfolio-a11y.test.mjs`.
+
+These are **static checks**, not a WCAG compliance certificate, Lighthouse performance report or cross-device browser test. A final browser-based audit should include keyboard/tab navigation, screen reader labels, desktop + 320/375/390px mobile screenshots, dialog focus handling, WebGL fallback, requests/console errors and a measured Lighthouse run.
+
 ## Local preview and checks
 
 ```sh
 python3 -m http.server 8090
 # Open http://localhost:8090
-node --test scripts/catalog.test.mjs
+node --test scripts/*.test.mjs
 node --check script.js
 node --check lib/scene.mjs
 ```
