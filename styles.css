@@ -17,3 +17,14 @@ body.motion-paused .portrait-rig{transform:translate(-50%,-50%)}body.motion-paus
 .project-capture{margin:32px 0 0;padding-top:24px;border-top:1px solid var(--line)}.project-capture a{display:block}.project-capture img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:5px;background:var(--surface)}.project-capture figcaption{margin-top:10px;font-size:10px;line-height:1.7;color:var(--muted)}
 
 .hero-actions{flex-wrap:wrap}.hero-actions .resume-link{white-space:nowrap}
+
+
+/* Engineering case study: readable across film/studio themes and narrow screens. */
+.case-study{margin-top:28px;border-top:1px solid var(--line);padding-top:24px;display:grid;gap:17px}
+.case-study-kicker{font:9px/1.6 var(--mono);letter-spacing:1.1px;color:var(--accent2);margin:0}
+.case-study-section{border:1px solid var(--line);background:var(--surface);border-radius:6px;padding:16px 18px;min-width:0}
+.dialog-copy .case-study-section h3{font:10px/1.5 var(--mono);letter-spacing:.8px;text-transform:uppercase;color:var(--accent);margin:0 0 10px}
+.case-study-section p,.case-study-section li{font-size:12px;line-height:1.8;color:var(--text);overflow-wrap:anywhere}
+.case-study-section p{margin:0}.case-study-section ul{margin:0;padding-left:19px}.case-study-section li+li{margin-top:8px}
+.card-links{flex-wrap:wrap;row-gap:9px}.project-status{overflow-wrap:anywhere}
+@media(max-width:650px){.case-study{gap:12px;margin-top:20px}.case-study-section{padding:14px}.case-study-section p,.case-study-section li{font-size:11px}.dialog-copy .case-study-section h3{font-size:9px}}
