@@ -134,6 +134,33 @@ function renderProjects(profile, catalog) {
   filters.addEventListener('click', event => { const target = event.target.closest('button[data-filter]'); if (!target) return; filters.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b === target))); let visible = 0; reel.querySelectorAll('.project-card').forEach(card => { card.hidden = target.dataset.filter !== 'all' && card.dataset.category !== target.dataset.filter; if (!card.hidden) visible++; }); $('#filter-status').textContent = visible + (visible === 1 ? ' project shown.' : ' projects shown.'); });
 }
 
+function renderSkills(profile) {
+  const holder = $('#skills-grid');
+  if (!holder) return;
+  holder.replaceChildren();
+  for (const skill of profile.skills || []) {
+    if (!skill || !Array.isArray(skill.technologies) || !Array.isArray(skill.evidence)) continue;
+    const card = element('article', 'skill-card');
+    const head = element('div', 'skill-card-head');
+    head.append(element('span', 'skill-index', skill.number || ''), element('h3', '', skill.title || 'Engineering'));
+    card.append(head, element('p', 'skill-summary', skill.summary || ''));
+    const tags = element('ul', 'skill-tags');
+    for (const technology of skill.technologies) {
+      if (typeof technology === 'string' && technology.trim()) tags.append(element('li', '', technology));
+    }
+    card.append(tags);
+    const proof = element('div', 'skill-proof');
+    proof.append(element('p', 'skill-proof-label', 'EXPLORE THE IMPLEMENTATION'));
+    for (const reference of skill.evidence) {
+      if (!reference || !/^[-\w]+\/[-\w.]+$/.test(reference.repository || '')) continue;
+      const link = external((reference.label || reference.repository) + ' ↗', 'https://github.com/' + reference.repository);
+      if (link) proof.append(link);
+    }
+    card.append(proof);
+    holder.append(card);
+  }
+}
+
 function renderMilestones(profile) {
   const holder = $('#milestones'); holder.replaceChildren();
   for (const m of profile.milestones || []) { const item = element('article', 'milestone'); item.append(element('p', 'eyebrow', m.label), element('h3', '', m.title), element('p', '', m.text)); const link = external(m.linkLabel || 'Explore the work ↗', m.url); if (link) item.append(link); holder.append(item); }
@@ -154,7 +181,7 @@ async function loadContent() {
     if (!profileResponse.ok) throw new Error('Profile unavailable'); const profile = await profileResponse.json();
     let catalog = { repositories: [], releases: [] }; if (catalogResponse?.ok) { try { catalog = await catalogResponse.json(); } catch { /* Use curated projects when the snapshot cannot load. */ } }
     if (!Array.isArray(profile.projects) || !profile.projects.length || !Array.isArray(catalog.repositories)) throw new Error('Invalid catalog');
-    renderProjects(profile, catalog); renderMilestones(profile); renderGitHub(profile, catalog);
+    renderProjects(profile, catalog); renderSkills(profile); renderMilestones(profile); renderGitHub(profile, catalog);
   } catch { $('#sync-status').textContent = 'The project list could not load. The repository links and contact options still work.'; }
 }
 loadContent();
