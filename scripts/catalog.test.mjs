@@ -43,3 +43,19 @@ test('a verified release is shown as a release, never an invented achievement', 
   const catalog = { repositories: [repo()], releases: [{ repository: 'OM2412/New-Project', name: 'Version 1', tag: 'v1', url: 'https://github.com/OM2412/New-Project/releases/tag/v1', publishedAt: '2026-10-19T10:00:00Z' }] };
   const items = activityItems(profile, catalog); assert.equal(items[0].kind, 'Release'); assert.equal(items[0].title, 'New-Project · Version 1');
 });
+
+
+test('featured case studies are complete and deployment links are safe', async () => {
+  const { readFile } = await import('node:fs/promises');
+  const profileData = JSON.parse(await readFile(new URL('../data/profile.json', import.meta.url), 'utf8'));
+  assert.ok(profileData.projects.length >= 3);
+  for (const project of profileData.projects) {
+    assert.ok(project.caseStudy, project.id + ' needs a case study');
+    for (const section of ['problem', 'architecture', 'engineering', 'verification', 'next']) {
+      const value = project.caseStudy[section];
+      assert.ok(Array.isArray(value) ? value.length > 0 && value.every(x => typeof x === 'string' && x.trim()) : typeof value === 'string' && value.trim(), project.id + ' missing ' + section);
+    }
+    assert.ok(safeHttps(project.website), project.id + ' needs a safe deployment URL');
+    if (project.preview) assert.ok(safeHttps(project.preview), project.id + ' has an unsafe alternate deployment');
+  }
+});
