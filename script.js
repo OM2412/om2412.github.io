@@ -77,9 +77,34 @@ function openProject(project) {
   const status = element('p', 'project-status', project.status); copy.append(status);
   const tags = element('div', 'tags'); project.stack.forEach(x => tags.append(element('span', '', x))); copy.append(tags, element('p', 'contribution', project.role));
   for (const [heading, text] of [['The engineering decision', project.decision], ['A lesson from the build', project.lesson]]) copy.append(element('h3', '', heading), element('p', '', text));
+  const study = project.caseStudy;
+  if (study && typeof study === 'object') {
+    const wrapper = element('section', 'case-study');
+    wrapper.setAttribute('aria-label', 'Engineering case study');
+    wrapper.append(element('p', 'case-study-kicker', 'ENGINEERING BREAKDOWN / THE WORK BEHIND THE SCREEN'));
+    const addSection = (label, value) => {
+      if (!value) return;
+      const section = element('section', 'case-study-section');
+      section.append(element('h3', '', label));
+      if (Array.isArray(value)) {
+        const list = element('ul', '');
+        value.forEach(item => { if (typeof item === 'string' && item.trim()) list.append(element('li', '', item)); });
+        if (list.childElementCount) section.append(list);
+      } else if (typeof value === 'string') {
+        section.append(element('p', '', value));
+      }
+      wrapper.append(section);
+    };
+    addSection('01 / The problem', study.problem);
+    addSection('02 / System architecture', study.architecture);
+    addSection('03 / Engineering decisions', study.engineering);
+    addSection('04 / Verification & limitations', study.verification);
+    addSection('05 / What comes next', study.next);
+    copy.append(wrapper);
+  }
   copy.append(element('p', 'boundary', project.boundary));
   const links = element('div', 'dialog-links'); const source = external('Source & setup ↗', project.source); if (source) links.append(source);
-  if (project.website) links.append(external(project.status === 'Public demo' ? 'Open demo ↗' : 'Project website ↗', project.website));
+  if (project.website) links.append(external(project.status.startsWith('Live demo') || project.status === 'Public demo' ? 'Open live demo ↗' : 'Project website ↗', project.website));
   if (project.preview) { const preview = external((project.previewLabel || 'Alternative deployment') + ' ↗', project.preview); if (preview) links.append(preview); }
   if (project.video) links.append(external('Watch walkthrough ↗', project.video));
   copy.append(links); grid.append(artwork(project), copy); content.append(grid);
