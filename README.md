@@ -36,6 +36,12 @@ A connected ChatGPT background task checks public GitHub metadata daily. Read th
 
 The date on the website is the **saved snapshot date**. Daily checks without source changes do not change that date. Automatic updates depend on the task remaining enabled and the GitHub connection remaining available; GitHub Pages can take several minutes to publish changes.
 
+## Project-backed technical skills
+
+The homepage now includes a dedicated **Tools with proof** section between the selected project reel and services. It groups hands-on technologies into backend/API, frontend/UX, data/persistence, AI/integrations and testing/deployment. Each group links to the specific repositories showing its use.
+
+The source of truth is `data/profile.json → skills`; `script.js` creates text-only cards with validated GitHub repository links, while `styles.css` handles responsive layouts. This section intentionally avoids invented expertise ratings, percentage proficiency bars and unverifiable performance claims.
+
 ## Content editing
 
 - `data/profile.json`: curated projects, case studies, collaborator attribution, deployment overrides and milestones.
