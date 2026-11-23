@@ -72,3 +72,36 @@ body.motion-paused .portrait-rig{transform:translate(-50%,-50%)}body.motion-paus
 .project-gallery .project-capture a:hover img{border-color:var(--accent2)}
 .visual-disclosure{margin:0 0 15px;border-left:2px solid var(--accent2);padding:12px 15px;background:var(--surface)}
 @media(max-width:650px){.architecture-grid{grid-template-columns:1fr}.architecture-panel{padding:15px}.architecture-gallery,.project-gallery{margin-top:25px;padding-top:20px}.visual-heading{font-size:21px}.architecture-steps li{font-size:11px}.project-gallery .project-capture img{max-height:none}}
+
+
+/* QA improvements: readable mobile cards, touch targets, safe overflowing content. */
+.project-card,.dialog-shell,.dialog-copy{min-width:0}
+.dialog-links a,.card-links a,.skill-proof a{overflow-wrap:anywhere}
+.poster-button{min-height:44px}
+.header nav a,.card-links a,.dialog-links a{display:inline-flex;align-items:center;min-height:32px}
+@media(max-width:650px){
+  .header nav{gap:10px}
+  .header nav a{font-size:11px;min-height:36px}
+  .controls button{font-size:10px;min-height:36px}
+  .card-links{gap:8px 14px;font-size:11px}
+  .card-links a{min-height:36px}
+  .dialog-links a{min-height:40px}
+  .project-card .card-meta{font-size:9px}
+}
+@media(max-width:480px){
+  .project-reel{grid-template-columns:1fr;gap:28px}
+  .poster-art{height:350px}
+  .poster-title{font-size:40px}
+  .art-trail .poster-title{font-size:45px}
+  .art-trail img{width:410px;left:20px}
+  .poster-header{font-size:8px;left:16px;right:16px}
+  .poster-title small{font-size:10px}
+  .poster-bottom-label{font-size:7px}
+  .card-caption{min-height:0;font-size:12px}
+  .card-meta{font-size:10px}
+  .header{flex-wrap:wrap}
+  .header nav{order:3;width:100%;justify-content:space-between}
+  .header nav a:nth-child(2){display:inline}
+  .hero h1{font-size:clamp(60px,17vw,75px)}
+}
+@media(prefers-reduced-motion:reduce){.skill-card:hover,.poster-button:hover{transform:none}}
