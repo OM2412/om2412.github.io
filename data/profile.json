@@ -38,7 +38,22 @@
       "lesson": "The agent could answer before using all required tools. Backend-enforced tool order and regression checks made the investigation sequence explicit.",
       "boundary": "Fictional practice cases only. The original FalkorDB cloud instance expired; the Cloudflare Workers + D1 preview has not been verified as feature-equivalent to the graph implementation. Render and Cloudflare deployments should be tested independently.",
       "preview": "https://returntrail-preview-api.omjadon242-67c.workers.dev/",
-      "previewLabel": "Cloudflare D1 preview"
+      "previewLabel": "Cloudflare D1 preview",
+      "caseStudy": {
+        "problem": "Return-pickup records can give contradictory reasons for the same attempt, and an earlier support reply may not cover newly added evidence.",
+        "architecture": [
+          "React interface → Spring Boot API → original FalkorDB evidence graph",
+          "Constrained investigation tools → rules → source-linked follow-up and brief",
+          "Separate Cloudflare Workers + D1 preview after hosted FalkorDB expiration"
+        ],
+        "engineering": [
+          "Compare claims only when they concern the same pickup attempt; retain document-level provenance.",
+          "Keep manual explanations and their reviewed source sets, rather than treating task completion as case closure.",
+          "Enforce an ordered investigation workflow so model output cannot skip required evidence tools."
+        ],
+        "verification": "Original graph workflow includes backend tests and documented synthetic hosted checks. The Cloudflare D1 preview is separate; feature parity and current end-to-end health remain unverified.",
+        "next": "Validate D1 persistence, permissions and evidence semantics against the original FalkorDB behavior before promoting it as a full replacement."
+      }
     },
     {
       "id": "oncetold",
@@ -67,7 +82,22 @@
       "screenshot": "assets/oncetold-portal.webp",
       "screenshotAlt": "Actual OnceTold sign-in portal with customer and support-agent access",
       "preview": "https://oncetold.pages.dev/",
-      "previewLabel": "Cloudflare frontend"
+      "previewLabel": "Cloudflare frontend",
+      "caseStudy": {
+        "problem": "Support customers repeat context because earlier tickets and resolutions are not recalled in later conversations.",
+        "architecture": [
+          "React portal → Java/Spring Boot ticket and authentication APIs → Neon PostgreSQL",
+          "Authenticated Java service → loopback-only FastAPI bridge → customer-scoped Cognee memory",
+          "Groq-powered reply uses recalled context when available; memory writes are asynchronous"
+        ],
+        "engineering": [
+          "Derive the memory owner from the authenticated ticket on the backend, never a caller-selected customer ID.",
+          "Handle slow memory recall with bounded timeouts and an answer path when the provider is unavailable.",
+          "Keep the memory bridge private to the app container rather than exposing it as a public API."
+        ],
+        "verification": "Repository documents owner/cross-customer access tests and a hosted fictional end-to-end check. The Cloudflare tour is synthetic and does not prove live API or memory health.",
+        "next": "Re-run real registration, ticket, model response, memory recall and persistence checks against the current Render endpoint."
+      }
     },
     {
       "id": "legal",
@@ -94,7 +124,22 @@
       "video": null,
       "decision": "AI candidates are displayed only after their days and unit match the supporting source quote. Suggestions do not automatically alter the rule verdict.",
       "lesson": "Scanned and mixed PDFs need explicit OCR, page and upload limits. Exact source wording and legal interpretation are different questions.",
-      "boundary": "Evidence-first contract review prototype, not legal advice. The current hosted AI provider is Gemini; older Ollama-compatible code remains in the repository but is not required for the hosted setup. Verify original document wording and any OCR output."
+      "boundary": "Evidence-first contract review prototype, not legal advice. The current hosted AI provider is Gemini; older Ollama-compatible code remains in the repository but is not required for the hosted setup. Verify original document wording and any OCR output.",
+      "caseStudy": {
+        "problem": "An Agreement and Statement of Work may specify payment obligations differently, but bare AI summaries are difficult to audit.",
+        "architecture": [
+          "React/Vite review workspace → Spring Boot document API → PDFBox/Tesseract extraction",
+          "Deterministic clause comparison and policy signals → quoted evidence and review output",
+          "Optional Gemini quote discovery → source matching; PostgreSQL stores account-scoped reviews"
+        ],
+        "engineering": [
+          "Separate verifiable source quotations from interpretations or legal conclusions.",
+          "Constrain AI candidate quotes with exact source matching and payment-detail validation.",
+          "Apply an illustrative adjustable payment threshold, not a universal legal standard."
+        ],
+        "verification": "Synthetic checks and CI cover selected extraction and account workflows; no independently labeled real-contract accuracy benchmark has been completed.",
+        "next": "Add a consent-cleared, independently annotated evaluation set and validate AI quality separately from database readiness."
+      }
     },
     {
       "id": "spidersense",
@@ -119,7 +164,20 @@
       "video": null,
       "decision": "Calculate deterministic differences before asking AI to explain them. Archived snapshots preserve the before-and-after context behind an alert.",
       "lesson": "A separate demo mode simulates changes for short presentations. The repository distinguishes this from real Bright Data acquisition.",
-      "boundary": "A team hackathon prototype. Simulated demo scenarios are not observed market events."
+      "boundary": "A team hackathon prototype. Simulated demo scenarios are not observed market events.",
+      "caseStudy": {
+        "problem": "Competitor pricing, hiring and news changes are difficult to monitor and interpret consistently.",
+        "architecture": [
+          "Frontend dashboard → backend data-collection and snapshot workflow",
+          "Structured before/after comparisons → saved signal context → optional AI explanation"
+        ],
+        "engineering": [
+          "Calculate concrete differences before asking AI to explain them.",
+          "Keep demo simulations distinguishable from live external data acquisition."
+        ],
+        "verification": "The project is a collaborative prototype; demo scenarios are not evidence of observed competitor events.",
+        "next": "Broaden source reliability tests and evaluate alert quality against manually checked changes."
+      }
     }
   ],
   "milestones": [
