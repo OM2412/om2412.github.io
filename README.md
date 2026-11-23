@@ -36,6 +36,14 @@ A connected ChatGPT background task checks public GitHub metadata daily. Read th
 
 The date on the website is the **saved snapshot date**. Daily checks without source changes do not change that date. Automatic updates depend on the task remaining enabled and the GitHub connection remaining available; GitHub Pages can take several minutes to publish changes.
 
+## Visual project case studies
+
+The selected-work dialogs now include **responsive architecture flow panels** for each featured project. ReturnTrail has distinct original FalkorDB and Cloudflare D1 preview diagrams; other projects show evidence-based application flows. These are explanatory architecture diagrams, **not screenshots or proof of live feature availability**.
+
+Where an actual capture is available, the portfolio uses sourced images with explicit attribution and alt text: the original ReturnTrail workspace and Context Lab capture, and the OnceTold support portal. Folio and SpiderSense explicitly disclose that no verified product screenshot is included yet. Capture URLs are restricted to local `assets/*.webp` files or approved ReturnTrail GitHub-hosted documentation images.
+
+Case-study flow and image metadata live in `data/profile.json`. Tests check diagram completeness, screenshot attribution and local file presence. Live status still requires independent end-to-end testing.
+
 ## Project-backed technical skills
 
 The homepage now includes a dedicated **Tools with proof** section between the selected project reel and services. It groups hands-on technologies into backend/API, frontend/UX, data/persistence, AI/integrations and testing/deployment. Each group links to the specific repositories showing its use.
