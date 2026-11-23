@@ -59,3 +59,20 @@ test('featured case studies are complete and deployment links are safe', async (
     if (project.preview) assert.ok(safeHttps(project.preview), project.id + ' has an unsafe alternate deployment');
   }
 });
+
+
+test('technical skill areas link to real repository evidence', async () => {
+  const { readFile } = await import('node:fs/promises');
+  const data = JSON.parse(await readFile(new URL('../data/profile.json', import.meta.url), 'utf8'));
+  const expected = ['backend', 'frontend', 'data', 'ai', 'delivery'];
+  assert.deepEqual(data.skills.map(group => group.id), expected);
+  for (const group of data.skills) {
+    assert.ok(group.title && group.summary, group.id + ' requires a title and description');
+    assert.ok(group.technologies.length >= 3, group.id + ' requires concrete technologies');
+    assert.ok(group.evidence.length >= 1, group.id + ' requires linked project evidence');
+    for (const entry of group.evidence) {
+      assert.match(entry.repository, /^[\\w-]+\\/[\\w.-]+$/);
+      assert.ok(data.projects.some(project => project.repository === entry.repository) || entry.repository === 'OM2412/om2412.github.io');
+    }
+  }
+});
