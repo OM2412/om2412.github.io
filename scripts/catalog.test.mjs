@@ -71,7 +71,7 @@ test('technical skill areas link to real repository evidence', async () => {
     assert.ok(group.technologies.length >= 3, group.id + ' requires concrete technologies');
     assert.ok(group.evidence.length >= 1, group.id + ' requires linked project evidence');
     for (const entry of group.evidence) {
-      assert.match(entry.repository, /^[\\w-]+\\/[\\w.-]+$/);
+      assert.match(entry.repository, /^[a-zA-Z0-9_-]+\/[a-zA-Z0-9_.-]+$/);
       assert.ok(data.projects.some(project => project.repository === entry.repository) || entry.repository === 'OM2412/om2412.github.io');
     }
   }
