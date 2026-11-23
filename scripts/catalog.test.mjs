@@ -76,3 +76,27 @@ test('technical skill areas link to real repository evidence', async () => {
     }
   }
 });
+
+
+test('architecture diagrams and real captures have honest, bounded metadata', async () => {
+  const { readFile } = await import('node:fs/promises');
+  const { existsSync } = await import('node:fs');
+  const data = JSON.parse(await readFile(new URL('../data/profile.json', import.meta.url), 'utf8'));
+  for (const project of data.projects) {
+    assert.ok(Array.isArray(project.architectureDiagrams) && project.architectureDiagrams.length > 0, project.id + ' missing architecture');
+    for (const diagram of project.architectureDiagrams) {
+      assert.ok(diagram.title && diagram.label && diagram.nodes?.length >= 3, project.id + ' incomplete architecture path');
+      assert.ok(diagram.nodes.every(node => typeof node === 'string' && node.trim()));
+    }
+    if (!project.captures?.length) {
+      assert.ok(project.visualNote, project.id + ' must disclose missing real UI captures');
+    }
+    for (const capture of project.captures || []) {
+      assert.ok(capture.alt && capture.caption, project.id + ' capture needs attribution and alt text');
+      const local = /^assets\/[a-z0-9-]+\.webp$/.test(capture.src);
+      const upstream = /^https:\/\/raw\.githubusercontent\.com\/OM2412\/ReturnTrail\/main\/docs\/assets\/[a-z0-9-]+\.webp$/.test(capture.src);
+      assert.ok(local || upstream, project.id + ' capture is not from an approved source');
+      if (local) assert.ok(existsSync(new URL('../' + capture.src, import.meta.url)), project.id + ' missing local capture');
+    }
+  }
+});
