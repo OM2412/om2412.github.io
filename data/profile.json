@@ -53,7 +53,41 @@
         ],
         "verification": "Original graph workflow includes backend tests and documented synthetic hosted checks. The Cloudflare D1 preview is separate; feature parity and current end-to-end health remain unverified.",
         "next": "Validate D1 persistence, permissions and evidence semantics against the original FalkorDB behavior before promoting it as a full replacement."
-      }
+      },
+      "architectureDiagrams": [
+        {
+          "title": "Original graph-backed investigation",
+          "label": "Original implementation · FalkorDB service expired",
+          "nodes": [
+            "React workspace",
+            "Spring Boot API",
+            "FalkorDB evidence graph",
+            "Rule checks + constrained Groq tools",
+            "Source-linked case brief"
+          ]
+        },
+        {
+          "title": "Cloudflare alternative preview",
+          "label": "Separate deployment · feature parity unverified",
+          "nodes": [
+            "Cloudflare Worker + assets",
+            "D1 preview database",
+            "Preview API response"
+          ]
+        }
+      ],
+      "captures": [
+        {
+          "src": "assets/returntrail.webp",
+          "alt": "Actual ReturnTrail investigation workspace",
+          "caption": "Actual ReturnTrail workspace captured from the original graph-backed implementation."
+        },
+        {
+          "src": "https://raw.githubusercontent.com/OM2412/ReturnTrail/main/docs/assets/context-lab.webp",
+          "alt": "ReturnTrail source-exclusion Context Lab interface",
+          "caption": "Context Lab screenshot from the ReturnTrail repository; demonstrates the original read-only source-exclusion workflow."
+        }
+      ]
     },
     {
       "id": "oncetold",
@@ -97,7 +131,35 @@
         ],
         "verification": "Repository documents owner/cross-customer access tests and a hosted fictional end-to-end check. The Cloudflare tour is synthetic and does not prove live API or memory health.",
         "next": "Re-run real registration, ticket, model response, memory recall and persistence checks against the current Render endpoint."
-      }
+      },
+      "architectureDiagrams": [
+        {
+          "title": "Support portal and application data",
+          "label": "Application path",
+          "nodes": [
+            "React support portal",
+            "Spring Boot auth + tickets",
+            "Neon PostgreSQL"
+          ]
+        },
+        {
+          "title": "AI memory loop",
+          "label": "Memory integration · external services can time out",
+          "nodes": [
+            "Authenticated ticket owner",
+            "Private FastAPI bridge",
+            "Cognee memory graph",
+            "Groq response with recalled context"
+          ]
+        }
+      ],
+      "captures": [
+        {
+          "src": "assets/oncetold-portal.webp",
+          "alt": "Actual OnceTold support portal sign-in screen",
+          "caption": "Actual OnceTold support portal capture; this is not proof that external AI and memory providers are currently available."
+        }
+      ]
     },
     {
       "id": "legal",
@@ -139,7 +201,31 @@
         ],
         "verification": "Synthetic checks and CI cover selected extraction and account workflows; no independently labeled real-contract accuracy benchmark has been completed.",
         "next": "Add a consent-cleared, independently annotated evaluation set and validate AI quality separately from database readiness."
-      }
+      },
+      "architectureDiagrams": [
+        {
+          "title": "Evidence-first document review",
+          "label": "Agreement and SOW pipeline",
+          "nodes": [
+            "React + Vite UI",
+            "Spring Boot document API",
+            "PDFBox / Tesseract extraction",
+            "Payment rules + source evidence",
+            "Review results + PostgreSQL archive"
+          ]
+        },
+        {
+          "title": "Optional Gemini-assisted quotes",
+          "label": "Model suggestions never silently replace rule findings",
+          "nodes": [
+            "Extracted contract text",
+            "Gemini Developer API",
+            "Exact quote verification",
+            "Verified quote suggestions"
+          ]
+        }
+      ],
+      "visualNote": "No independently sourced product screenshot is available in this repository yet. Use the live Folio demo and source code to inspect the current UI; the diagrams below are architecture explanations, not screenshots."
     },
     {
       "id": "spidersense",
@@ -177,7 +263,21 @@
         ],
         "verification": "The project is a collaborative prototype; demo scenarios are not evidence of observed competitor events.",
         "next": "Broaden source reliability tests and evaluate alert quality against manually checked changes."
-      }
+      },
+      "architectureDiagrams": [
+        {
+          "title": "Signal detection workflow",
+          "label": "Conceptual architecture based on documented project work",
+          "nodes": [
+            "Competitor page snapshots",
+            "Backend change detection",
+            "Structured before / after signals",
+            "Optional AI explanation",
+            "React / Next.js dashboard"
+          ]
+        }
+      ],
+      "visualNote": "Project poster is an illustration, not a product screenshot. Open the project's public demo to inspect the actual application."
     }
   ],
   "milestones": [
