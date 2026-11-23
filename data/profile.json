@@ -233,5 +233,123 @@
     "url": "https://1drv.ms/w/c/f40582e48972967e/IQA5Dp4ssOmESL1FDOQ7YSzdAfJ6VJlWLpExrYVHfqLWuoo?e=S1SFne&download=1",
     "updatedAt": "2026-10-30",
     "source": "https://1drv.ms/w/c/f40582e48972967e/IQA5Dp4ssOmESL1FDOQ7YSzdAfJ6VJlWLpExrYVHfqLWuoo?e=S1SFne"
-  }
+  },
+  "skills": [
+    {
+      "id": "backend",
+      "number": "01",
+      "title": "Backend & APIs",
+      "summary": "Server-side application flows, authentication, structured validation and REST integration.",
+      "technologies": [
+        "Java",
+        "Spring Boot",
+        "Spring Security",
+        "REST APIs",
+        "Maven"
+      ],
+      "evidence": [
+        {
+          "label": "Folio — review API and account-scoped history",
+          "repository": "OM2412/legal-contract-analyzer"
+        },
+        {
+          "label": "OnceTold — ticket and memory orchestration",
+          "repository": "OM2412/OnceTold"
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "number": "02",
+      "title": "Frontend & UX",
+      "summary": "Interactive React interfaces, responsive states, evidence displays and accessible navigation.",
+      "technologies": [
+        "React",
+        "JavaScript",
+        "HTML / CSS",
+        "Vite"
+      ],
+      "evidence": [
+        {
+          "label": "ReturnTrail — evidence investigation workspace",
+          "repository": "OM2412/ReturnTrail"
+        },
+        {
+          "label": "Portfolio — accessible cinematic UI",
+          "repository": "OM2412/om2412.github.io"
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "number": "03",
+      "title": "Data & Persistence",
+      "summary": "Relational persistence and source-linked data modeling, including the trade-offs of different storage systems.",
+      "technologies": [
+        "SQL",
+        "PostgreSQL",
+        "Spring Data JPA",
+        "Flyway",
+        "FalkorDB (original)",
+        "Cloudflare D1 (preview)"
+      ],
+      "evidence": [
+        {
+          "label": "Folio — PostgreSQL saved reviews",
+          "repository": "OM2412/legal-contract-analyzer"
+        },
+        {
+          "label": "ReturnTrail — graph design and D1 preview",
+          "repository": "OM2412/ReturnTrail"
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "number": "04",
+      "title": "AI & Integrations",
+      "summary": "Integrate model providers with explicit evidence checks, access boundaries and graceful fallback paths.",
+      "technologies": [
+        "Gemini API",
+        "Groq",
+        "Cognee",
+        "FastAPI",
+        "Source verification"
+      ],
+      "evidence": [
+        {
+          "label": "Folio — Gemini-assisted source quotes",
+          "repository": "OM2412/legal-contract-analyzer"
+        },
+        {
+          "label": "OnceTold — customer-scoped memory recall",
+          "repository": "OM2412/OnceTold"
+        }
+      ]
+    },
+    {
+      "id": "delivery",
+      "number": "05",
+      "title": "Build, Test & Deploy",
+      "summary": "Containerized builds, public previews, regression checks and cloud deployment troubleshooting.",
+      "technologies": [
+        "Git / GitHub",
+        "Docker",
+        "GitHub Actions",
+        "Render",
+        "Cloudflare Pages / Workers",
+        "Node test runner"
+      ],
+      "evidence": [
+        {
+          "label": "ReturnTrail — deployment and graph testing",
+          "repository": "OM2412/ReturnTrail"
+        },
+        {
+          "label": "Portfolio — static delivery and catalog tests",
+          "repository": "OM2412/om2412.github.io"
+        }
+      ]
+    }
+  ]
 }
