@@ -6,10 +6,10 @@ endobj
 << /Type /Pages /Kids [3 0 R] /Count 1 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /Contents 4 0 R /Annots [7 0 R 8 0 R 9 0 R 10 0 R 11 0 R 12 0 R 13 0 R 14 0 R 15 0 R 16 0 R 17 0 R 18 0 R 19 0 R] >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /Contents 4 0 R /Annots [7 0 R 8 0 R 9 0 R 10 0 R 11 0 R 12 0 R 13 0 R 14 0 R 15 0 R 16 0 R 17 0 R 18 0 R 19 0 R 20 0 R 21 0 R] >>
 endobj
 4 0 obj
-<< /Length 5206 >>
+<< /Length 5336 >>
 stream
 0.06 0.2 0.31 rg BT /F2 20 Tf 1 0 0 1 194 802 Tm (OM SINGH JADON) Tj ET
 0.07 0.33 0.57 rg BT /F2 9.3 Tf 1 0 0 1 142 780 Tm (JAVA BACKEND DEVELOPER  |  SPRING BOOT  |  REST APIs) Tj ET
@@ -64,6 +64,8 @@ stream
 0.07 0.33 0.57 rg BT /F2 11 Tf 1 0 0 1 45 107 Tm (ADDITIONAL) Tj ET
 0.72 0.81 0.88 RG 0.65 w 45 100 m 550 100 l S
 0.1 0.16 0.23 rg BT /F1 8.9 Tf 1 0 0 1 46 87 Tm (150+ LeetCode problems | 50 Days Badge 2026 | FUNTECH Club creatives) Tj ET
+0.07 0.33 0.57 rg BT /F2 8.5 Tf 1 0 0 1 518 350 Tm (VIDEO) Tj ET
+0.07 0.33 0.57 rg BT /F2 8.5 Tf 1 0 0 1 518 278 Tm (VIDEO) Tj ET
 endstream
 endobj
 5 0 obj
@@ -111,30 +113,38 @@ endobj
 19 0 obj
 << /Type /Annot /Subtype /Link /Rect [402 136 493.8 150] /Border [0 0 0] /A << /S /URI /URI (https://verify.masaischool.com/certificate/fWhZgtrUaj) >> >>
 endobj
+20 0 obj
+<< /Type /Annot /Subtype /Link /Rect [516 347 547 362] /Border [0 0 0] /A << /S /URI /URI (https://youtu.be/5lfysyQZOO0) >> >>
+endobj
+21 0 obj
+<< /Type /Annot /Subtype /Link /Rect [516 275 547 290] /Border [0 0 0] /A << /S /URI /URI (https://www.youtube.com/watch?v=342vYrwRyYw) >> >>
+endobj
 xref
-0 20
+0 22
 0000000000 65535 f 
 0000000009 00000 n 
 0000000058 00000 n 
 0000000115 00000 n 
-0000000349 00000 n 
-0000005606 00000 n 
-0000005676 00000 n 
-0000005751 00000 n 
-0000005892 00000 n 
-0000006033 00000 n 
-0000006202 00000 n 
-0000006353 00000 n 
-0000006563 00000 n 
-0000006712 00000 n 
-0000006878 00000 n 
-0000007028 00000 n 
-0000007182 00000 n 
-0000007334 00000 n 
-0000007485 00000 n 
-0000007678 00000 n 
+0000000363 00000 n 
+0000005750 00000 n 
+0000005820 00000 n 
+0000005895 00000 n 
+0000006036 00000 n 
+0000006177 00000 n 
+0000006346 00000 n 
+0000006497 00000 n 
+0000006707 00000 n 
+0000006856 00000 n 
+0000007022 00000 n 
+0000007172 00000 n 
+0000007326 00000 n 
+0000007478 00000 n 
+0000007629 00000 n 
+0000007822 00000 n 
+0000007992 00000 n 
+0000008135 00000 n 
 trailer
-<< /Size 20 /Root 1 0 R >>
+<< /Size 22 /Root 1 0 R >>
 startxref
-7848
+8293
 %%EOF
