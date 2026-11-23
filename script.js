@@ -108,13 +108,45 @@ function openProject(project) {
   if (project.preview) { const preview = external((project.previewLabel || 'Alternative deployment') + ' ↗', project.preview); if (preview) links.append(preview); }
   if (project.video) links.append(external('Watch walkthrough ↗', project.video));
   copy.append(links); grid.append(artwork(project), copy); content.append(grid);
-  if (typeof project.screenshot === 'string' && /^assets\/[a-z0-9-]+\.webp$/.test(project.screenshot)) {
-    const figure = element('figure', 'project-capture'), link = element('a');
-    link.href = project.screenshot; link.target = '_blank'; link.rel = 'noopener noreferrer';
-    const image = element('img'); image.src = project.screenshot; image.alt = project.screenshotAlt || project.title + ' application screenshot';
-    image.loading = 'lazy'; image.width = 1561; image.height = 956;
-    link.append(image); figure.append(link, element('figcaption', '', 'Actual ' + project.title + ' portal · open the image at full size ↗')); content.append(figure);
+
+  if (Array.isArray(project.architectureDiagrams) && project.architectureDiagrams.length) {
+    const section = element('section', 'architecture-gallery');
+    section.setAttribute('aria-label', project.title + ' architecture');
+    section.append(element('p', 'visual-kicker', 'SYSTEM DESIGN / ARCHITECTURE'));
+    section.append(element('h3', 'visual-heading', 'How the pieces connect'));
+    const diagrams = element('div', 'architecture-grid');
+    for (const diagram of project.architectureDiagrams) {
+      if (!Array.isArray(diagram.nodes) || !diagram.nodes.length) continue;
+      const panel = element('article', 'architecture-panel');
+      panel.append(element('h4', '', diagram.title || 'Architecture path'));
+      if (diagram.label) panel.append(element('p', 'architecture-scope', diagram.label));
+      const steps = element('ol', 'architecture-steps');
+      for (const node of diagram.nodes) if (typeof node === 'string' && node.trim()) steps.append(element('li', '', node));
+      panel.append(steps); diagrams.append(panel);
+    }
+    section.append(diagrams); content.append(section);
   }
+  const captures = Array.isArray(project.captures) ? project.captures : [];
+  if (captures.length || project.visualNote) {
+    const gallery = element('section', 'project-gallery');
+    gallery.setAttribute('aria-label', project.title + ' product captures');
+    gallery.append(element('p', 'visual-kicker', 'PRODUCT / REAL CAPTURES'));
+    gallery.append(element('h3', 'visual-heading', 'See the actual interface'));
+    if (project.visualNote) gallery.append(element('p', 'visual-disclosure', project.visualNote));
+    for (const capture of captures) {
+      if (typeof capture.src !== 'string') continue;
+      const local = /^assets\/[a-z0-9-]+\.webp$/.test(capture.src);
+      const upstream = /^https:\/\/raw\.githubusercontent\.com\/OM2412\/ReturnTrail\/main\/docs\/assets\/[a-z0-9-]+\.webp$/.test(capture.src);
+      if (!local && !upstream) continue;
+      const figure = element('figure', 'project-capture');
+      const link = element('a'); link.href = capture.src; link.target = '_blank'; link.rel = 'noopener noreferrer';
+      const image = element('img'); image.src = capture.src; image.alt = capture.alt || project.title + ' interface'; image.loading = 'lazy'; image.decoding = 'async';
+      link.append(image); figure.append(link, element('figcaption', '', capture.caption || 'Product screenshot'));
+      gallery.append(figure);
+    }
+    content.append(gallery);
+  }
+
   document.body.classList.add('dialog-open'); dialog.showModal();
 }
 
