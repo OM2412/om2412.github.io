@@ -6,63 +6,64 @@ endobj
 << /Type /Pages /Kids [3 0 R] /Count 1 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /Contents 4 0 R /Annots [7 0 R 8 0 R 9 0 R 10 0 R 11 0 R 12 0 R 13 0 R 14 0 R 15 0 R 16 0 R] >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /Contents 4 0 R /Annots [7 0 R 8 0 R 9 0 R 10 0 R 11 0 R 12 0 R 13 0 R 14 0 R 15 0 R 16 0 R 17 0 R 18 0 R 19 0 R] >>
 endobj
 4 0 obj
-<< /Length 5535 >>
+<< /Length 5206 >>
 stream
-0.070 0.200 0.310 rg BT /F2 20 Tf 1 0 0 1 189 806 Tm (OM SINGH JADON) Tj ET
-0.090 0.300 0.460 rg BT /F2 9.3 Tf 1 0 0 1 147 785 Tm (JAVA BACKEND DEVELOPER  |  SPRING BOOT  |  REST APIs) Tj ET
-0.140 0.190 0.260 rg BT /F1 8.7 Tf 1 0 0 1 153 769 Tm (Gwalior, Madhya Pradesh, India  |  omjadon242@gmail.com) Tj ET
-0.040 0.360 0.610 rg BT /F2 8.6 Tf 1 0 0 1 167 753 Tm (PORTFOLIO) Tj ET
-0.040 0.360 0.610 rg BT /F2 8.6 Tf 1 0 0 1 253 753 Tm (GITHUB) Tj ET
-0.040 0.360 0.610 rg BT /F2 8.6 Tf 1 0 0 1 316 753 Tm (LINKEDIN) Tj ET
-0.040 0.360 0.610 rg BT /F2 8.6 Tf 1 0 0 1 398 753 Tm (LEETCODE) Tj ET
-0.090 0.300 0.460 rg BT /F2 10.1 Tf 1 0 0 1 48 729 Tm (PROFESSIONAL SUMMARY) Tj ET
-0.76 0.83 0.88 RG 0.7 w 48 724 m 548 724 l S
-0.140 0.190 0.260 rg BT /F1 9.25 Tf 1 0 0 1 48 709 Tm (B.Tech Computer Science and Business Systems student at MITS Gwalior \(2028\), focused on Java backend) Tj ET
-0.140 0.190 0.260 rg BT /F1 9.25 Tf 1 0 0 1 48 694 Tm (engineering. Build authenticated Spring Boot REST APIs, database-backed applications, AI-integrated) Tj ET
-0.140 0.190 0.260 rg BT /F1 9.25 Tf 1 0 0 1 48 679 Tm (workflows and source-verifiable interfaces; experienced with end-to-end integration and deployment.) Tj ET
-0.090 0.300 0.460 rg BT /F2 10.1 Tf 1 0 0 1 48 654 Tm (TECHNICAL SKILLS) Tj ET
-0.76 0.83 0.88 RG 0.7 w 48 649 m 548 649 l S
-0.140 0.190 0.260 rg BT /F1 9.25 Tf 1 0 0 1 48 634 Tm (Languages: Java, SQL, JavaScript) Tj ET
-0.140 0.190 0.260 rg BT /F1 9.25 Tf 1 0 0 1 48 619 Tm (Backend: Spring Boot, Spring Security, REST APIs, JWT, JPA/Hibernate, Maven) Tj ET
-0.140 0.190 0.260 rg BT /F1 9.25 Tf 1 0 0 1 48 604 Tm (Frontend & Databases: React, HTML/CSS, PostgreSQL, MySQL, H2, Neon) Tj ET
-0.140 0.190 0.260 rg BT /F1 9.25 Tf 1 0 0 1 48 589 Tm (AI & Tools: Gemini API, Groq, Cognee, FastAPI, Git/GitHub, Docker, Postman, Render, Cloudflare) Tj ET
-0.090 0.300 0.460 rg BT /F2 10.1 Tf 1 0 0 1 48 565 Tm (EXPERIENCE) Tj ET
-0.76 0.83 0.88 RG 0.7 w 48 560 m 548 560 l S
-0.140 0.190 0.260 rg BT /F2 9.5 Tf 1 0 0 1 48 545 Tm (Java Development Intern - Cognifyz IT Solutions Pvt. Ltd.  |  Jun-Jul 2026) Tj ET
-0.140 0.190 0.260 rg BT /F1 8.8 Tf 1 0 0 1 59 529 Tm (- Implemented six Java console applications covering validation, arrays, strings, methods, and game logic.) Tj ET
-0.140 0.190 0.260 rg BT /F1 8.8 Tf 1 0 0 1 59 514 Tm (- Documented and version-controlled deliverables; practiced debugging and clear code handover.) Tj ET
-0.090 0.300 0.460 rg BT /F2 10.1 Tf 1 0 0 1 48 490 Tm (SELECTED PROJECTS) Tj ET
-0.76 0.83 0.88 RG 0.7 w 48 485 m 548 485 l S
-0.140 0.190 0.260 rg BT /F2 9.6 Tf 1 0 0 1 48 469 Tm (Folio - Contract Analyzer) Tj ET
-0.360 0.430 0.500 rg BT /F1 8.65 Tf 1 0 0 1 48 454 Tm (Java 25 | Spring Boot | React | PostgreSQL | Gemini) Tj ET
-0.040 0.360 0.610 rg BT /F2 8.6 Tf 1 0 0 1 427 454 Tm (LIVE DEMO) Tj ET
-0.040 0.360 0.610 rg BT /F2 8.6 Tf 1 0 0 1 500 454 Tm (CODE) Tj ET
-0.140 0.190 0.260 rg BT /F1 8.8 Tf 1 0 0 1 59 439 Tm (- Built agreement/SOW payment-term review with source quotes, policy checks and saved account-scoped reviews.) Tj ET
-0.140 0.190 0.260 rg BT /F1 8.8 Tf 1 0 0 1 59 424 Tm (- Gemini-assisted quote discovery is source-verified and remains separate from deterministic review.) Tj ET
-0.140 0.190 0.260 rg BT /F2 9.6 Tf 1 0 0 1 48 398 Tm (ReturnTrail - Evidence Investigation) Tj ET
-0.360 0.430 0.500 rg BT /F1 8.65 Tf 1 0 0 1 48 383 Tm (Java | Spring Boot | React | FalkorDB \(original\)) Tj ET
-0.040 0.360 0.610 rg BT /F2 8.6 Tf 1 0 0 1 427 383 Tm (LIVE DEMO) Tj ET
-0.040 0.360 0.610 rg BT /F2 8.6 Tf 1 0 0 1 500 383 Tm (CODE) Tj ET
-0.140 0.190 0.260 rg BT /F1 8.8 Tf 1 0 0 1 59 368 Tm (- Co-built source-linked investigations for conflicting pickup records and support follow-up history.) Tj ET
-0.140 0.190 0.260 rg BT /F1 8.8 Tf 1 0 0 1 59 353 Tm (- FalkorDB hosting expired; separate Workers/D1 preview has not been verified as graph-equivalent.) Tj ET
-0.140 0.190 0.260 rg BT /F2 9.6 Tf 1 0 0 1 48 327 Tm (OnceTold - AI Support Memory) Tj ET
-0.360 0.430 0.500 rg BT /F1 8.65 Tf 1 0 0 1 48 312 Tm (Spring Boot | React | FastAPI | Cognee | Groq) Tj ET
-0.040 0.360 0.610 rg BT /F2 8.6 Tf 1 0 0 1 427 312 Tm (LIVE DEMO) Tj ET
-0.040 0.360 0.610 rg BT /F2 8.6 Tf 1 0 0 1 500 312 Tm (CODE) Tj ET
-0.140 0.190 0.260 rg BT /F1 8.8 Tf 1 0 0 1 59 297 Tm (- Built authenticated customer-support tickets with customer-scoped memory recall and resolution writeback.) Tj ET
-0.140 0.190 0.260 rg BT /F1 8.8 Tf 1 0 0 1 59 282 Tm (- Integrated a private FastAPI memory bridge; deployed the service with Render and Neon PostgreSQL.) Tj ET
-0.090 0.300 0.460 rg BT /F2 10.1 Tf 1 0 0 1 48 232 Tm (EDUCATION & CERTIFICATIONS) Tj ET
-0.76 0.83 0.88 RG 0.7 w 48 227 m 548 227 l S
-0.140 0.190 0.260 rg BT /F1 9.3 Tf 1 0 0 1 48 212 Tm (B.Tech, Computer Science and Business Systems - MITS Gwalior  |  2024-2028) Tj ET
-0.140 0.190 0.260 rg BT /F1 9.3 Tf 1 0 0 1 48 197 Tm (Distributed Systems - NPTEL / IIT Kanpur  |  Elite, 71%  |  Jul-Sep 2026) Tj ET
-0.140 0.190 0.260 rg BT /F1 9.3 Tf 1 0 0 1 48 182 Tm (Minor Program in CSE and Advanced Technologies - CCE, IIT Mandi  |  Feb 2026) Tj ET
-0.090 0.300 0.460 rg BT /F2 10.1 Tf 1 0 0 1 48 157 Tm (ADDITIONAL) Tj ET
-0.76 0.83 0.88 RG 0.7 w 48 152 m 548 152 l S
-0.140 0.190 0.260 rg BT /F1 9.2 Tf 1 0 0 1 48 137 Tm (150+ LeetCode problems | 50 Days Badge 2026 | FUNTECH Club design and social creatives) Tj ET
-0.360 0.430 0.500 rg BT /F1 8.5 Tf 1 0 0 1 48 96 Tm (Live product links are project demos; source repositories document implementation and limitations.) Tj ET
+0.06 0.2 0.31 rg BT /F2 20 Tf 1 0 0 1 194 802 Tm (OM SINGH JADON) Tj ET
+0.07 0.33 0.57 rg BT /F2 9.3 Tf 1 0 0 1 142 780 Tm (JAVA BACKEND DEVELOPER  |  SPRING BOOT  |  REST APIs) Tj ET
+0.1 0.16 0.23 rg BT /F1 8.9 Tf 1 0 0 1 150 761 Tm (Gwalior, Madhya Pradesh, India  |  omjadon242@gmail.com) Tj ET
+0.07 0.33 0.57 rg BT /F2 8.5 Tf 1 0 0 1 155 743 Tm (PORTFOLIO) Tj ET
+0.07 0.33 0.57 rg BT /F2 8.5 Tf 1 0 0 1 241 743 Tm (GITHUB) Tj ET
+0.07 0.33 0.57 rg BT /F2 8.5 Tf 1 0 0 1 309 743 Tm (LINKEDIN) Tj ET
+0.07 0.33 0.57 rg BT /F2 8.5 Tf 1 0 0 1 391 743 Tm (LEETCODE) Tj ET
+0.07 0.33 0.57 rg BT /F2 11 Tf 1 0 0 1 45 717 Tm (PROFESSIONAL SUMMARY) Tj ET
+0.72 0.81 0.88 RG 0.65 w 45 710 m 550 710 l S
+0.1 0.16 0.23 rg BT /F1 9.25 Tf 1 0 0 1 46 696 Tm (B.Tech Computer Science and Business Systems student at MITS Gwalior \(2028\), focused on Java backend) Tj ET
+0.1 0.16 0.23 rg BT /F1 9.25 Tf 1 0 0 1 46 680 Tm (development. Built authenticated REST APIs, database-backed services, source-linked review workflows) Tj ET
+0.1 0.16 0.23 rg BT /F1 9.25 Tf 1 0 0 1 46 664 Tm (and AI integrations. Experienced in full-stack collaboration, testing and deployment.) Tj ET
+0.07 0.33 0.57 rg BT /F2 11 Tf 1 0 0 1 45 637 Tm (TECHNICAL SKILLS) Tj ET
+0.72 0.81 0.88 RG 0.65 w 45 630 m 550 630 l S
+0.1 0.16 0.23 rg BT /F1 9.25 Tf 1 0 0 1 46 615 Tm (Languages: Java, SQL, JavaScript  |  Backend: Spring Boot, Spring Security, REST APIs, JWT, JPA) Tj ET
+0.1 0.16 0.23 rg BT /F1 9.25 Tf 1 0 0 1 46 598 Tm (Frontend & Databases: React, HTML/CSS, PostgreSQL, MySQL, H2, Neon) Tj ET
+0.1 0.16 0.23 rg BT /F1 9.25 Tf 1 0 0 1 46 581 Tm (AI & Tools: Gemini, Groq, Cognee, FastAPI, Git, Maven, Docker, Postman, Render, Cloudflare) Tj ET
+0.07 0.33 0.57 rg BT /F2 11 Tf 1 0 0 1 45 555 Tm (EXPERIENCE) Tj ET
+0.72 0.81 0.88 RG 0.65 w 45 548 m 550 548 l S
+0.1 0.16 0.23 rg BT /F2 9.2 Tf 1 0 0 1 46 534 Tm (Java Development Intern - Cognifyz IT Solutions Pvt. Ltd. | Jun-Jul 2026) Tj ET
+0.07 0.33 0.57 rg BT /F2 8.5 Tf 1 0 0 1 382 518 Tm (VIEW INTERNSHIP CERTIFICATE) Tj ET
+0.1 0.16 0.23 rg BT /F1 9 Tf 1 0 0 1 56 502 Tm (- Built six Java console applications covering validation, strings, arrays, methods and game logic.) Tj ET
+0.1 0.16 0.23 rg BT /F1 9 Tf 1 0 0 1 56 486 Tm (- Documented work through Git and GitHub; practiced debugging, testing and clear handover.) Tj ET
+0.07 0.33 0.57 rg BT /F2 11 Tf 1 0 0 1 45 458 Tm (SELECTED PROJECTS) Tj ET
+0.72 0.81 0.88 RG 0.65 w 45 451 m 550 451 l S
+0.1 0.16 0.23 rg BT /F2 10 Tf 1 0 0 1 46 437 Tm (Folio - Contract Analyzer) Tj ET
+0.35 0.41 0.48 rg BT /F1 8.7 Tf 1 0 0 1 46 421 Tm (Java 25 | Spring Boot | React | Gemini) Tj ET
+0.07 0.33 0.57 rg BT /F2 8.5 Tf 1 0 0 1 402 422 Tm (LIVE DEMO) Tj ET
+0.07 0.33 0.57 rg BT /F2 8.5 Tf 1 0 0 1 477 422 Tm (SOURCE) Tj ET
+0.1 0.16 0.23 rg BT /F1 9 Tf 1 0 0 1 56 404 Tm (- Built agreement/SOW payment-term review with cited evidence, policy checks and saved reviews.) Tj ET
+0.1 0.16 0.23 rg BT /F1 9 Tf 1 0 0 1 56 388 Tm (- Gemini quote suggestions are source-verified, distinct from deterministic findings.) Tj ET
+0.1 0.16 0.23 rg BT /F2 10 Tf 1 0 0 1 46 365 Tm (ReturnTrail - Evidence Investigation) Tj ET
+0.35 0.41 0.48 rg BT /F1 8.7 Tf 1 0 0 1 46 349 Tm (Java | Spring Boot | React | FalkorDB \(original\)) Tj ET
+0.07 0.33 0.57 rg BT /F2 8.5 Tf 1 0 0 1 402 350 Tm (LIVE DEMO) Tj ET
+0.07 0.33 0.57 rg BT /F2 8.5 Tf 1 0 0 1 477 350 Tm (SOURCE) Tj ET
+0.1 0.16 0.23 rg BT /F1 9 Tf 1 0 0 1 56 332 Tm (- Co-built evidence investigations connecting pickup disputes and source-linked case context.) Tj ET
+0.1 0.16 0.23 rg BT /F1 9 Tf 1 0 0 1 56 316 Tm (- Hosted FalkorDB expired; alternative Workers/D1 preview feature parity is unverified.) Tj ET
+0.1 0.16 0.23 rg BT /F2 10 Tf 1 0 0 1 46 293 Tm (OnceTold - AI Support Memory) Tj ET
+0.35 0.41 0.48 rg BT /F1 8.7 Tf 1 0 0 1 46 277 Tm (Spring Boot | React | FastAPI | Cognee | Groq) Tj ET
+0.07 0.33 0.57 rg BT /F2 8.5 Tf 1 0 0 1 402 278 Tm (LIVE DEMO) Tj ET
+0.07 0.33 0.57 rg BT /F2 8.5 Tf 1 0 0 1 477 278 Tm (SOURCE) Tj ET
+0.1 0.16 0.23 rg BT /F1 9 Tf 1 0 0 1 56 260 Tm (- Built authenticated support tickets with customer-scoped memory and resolution writeback.) Tj ET
+0.1 0.16 0.23 rg BT /F1 9 Tf 1 0 0 1 56 244 Tm (- Integrated a private FastAPI bridge and deployed with Render and Neon PostgreSQL.) Tj ET
+0.07 0.33 0.57 rg BT /F2 11 Tf 1 0 0 1 45 198 Tm (EDUCATION AND CERTIFICATIONS) Tj ET
+0.72 0.81 0.88 RG 0.65 w 45 191 m 550 191 l S
+0.1 0.16 0.23 rg BT /F1 9.25 Tf 1 0 0 1 46 177 Tm (B.Tech, Computer Science and Business Systems - MITS Gwalior | 2024-2028) Tj ET
+0.1 0.16 0.23 rg BT /F1 8.9 Tf 1 0 0 1 46 158 Tm (NPTEL Distributed Systems - IIT Kanpur | Elite, 71% | Jul-Sep 2026) Tj ET
+0.07 0.33 0.57 rg BT /F2 8.5 Tf 1 0 0 1 402 158 Tm (CREDENTIAL LISTING) Tj ET
+0.1 0.16 0.23 rg BT /F1 8.9 Tf 1 0 0 1 46 139 Tm (Minor in CSE & Advanced Technologies - CCE IIT Mandi | Feb 2026) Tj ET
+0.07 0.33 0.57 rg BT /F2 8.5 Tf 1 0 0 1 402 139 Tm (VERIFY CERTIFICATE) Tj ET
+0.07 0.33 0.57 rg BT /F2 11 Tf 1 0 0 1 45 107 Tm (ADDITIONAL) Tj ET
+0.72 0.81 0.88 RG 0.65 w 45 100 m 550 100 l S
+0.1 0.16 0.23 rg BT /F1 8.9 Tf 1 0 0 1 46 87 Tm (150+ LeetCode problems | 50 Days Badge 2026 | FUNTECH Club creatives) Tj ET
 endstream
 endobj
 5 0 obj
@@ -72,56 +73,68 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
 endobj
 7 0 obj
-<< /Type /Annot /Subtype /Link /Rect [167 750 212.9 763] /Border [0 0 0] /A << /S /URI /URI (https://om2412.github.io/) >> >>
+<< /Type /Annot /Subtype /Link /Rect [155 740 200.9 754] /Border [0 0 0] /A << /S /URI /URI (https://om2412.github.io/) >> >>
 endobj
 8 0 obj
-<< /Type /Annot /Subtype /Link /Rect [253 750 283.6 763] /Border [0 0 0] /A << /S /URI /URI (https://github.com/OM2412) >> >>
+<< /Type /Annot /Subtype /Link /Rect [241 740 271.6 754] /Border [0 0 0] /A << /S /URI /URI (https://github.com/OM2412) >> >>
 endobj
 9 0 obj
-<< /Type /Annot /Subtype /Link /Rect [316 750 356.8 763] /Border [0 0 0] /A << /S /URI /URI (https://www.linkedin.com/in/om-singh-jadon-b92679314/) >> >>
+<< /Type /Annot /Subtype /Link /Rect [309 740 349.8 754] /Border [0 0 0] /A << /S /URI /URI (https://www.linkedin.com/in/om-singh-jadon-b92679314/) >> >>
 endobj
 10 0 obj
-<< /Type /Annot /Subtype /Link /Rect [398 750 438.8 763] /Border [0 0 0] /A << /S /URI /URI (https://leetcode.com/u/Omjadon_24/) >> >>
+<< /Type /Annot /Subtype /Link /Rect [391 740 431.8 754] /Border [0 0 0] /A << /S /URI /URI (https://leetcode.com/u/Omjadon_24/) >> >>
 endobj
 11 0 obj
-<< /Type /Annot /Subtype /Link /Rect [427 451 472.9 464] /Border [0 0 0] /A << /S /URI /URI (https://folio-c4no.onrender.com/) >> >>
+<< /Type /Annot /Subtype /Link /Rect [382 515 519.7 529] /Border [0 0 0] /A << /S /URI /URI (https://1drv.ms/b/c/f40582e48972967e/IQBQW1U_zuqKSpKbY_yoXZytAeDgnWNfm3wp5119fzzT37I?e=ZTeZB0) >> >>
 endobj
 12 0 obj
-<< /Type /Annot /Subtype /Link /Rect [500 451 520.4 464] /Border [0 0 0] /A << /S /URI /URI (https://github.com/OM2412/legal-contract-analyzer) >> >>
+<< /Type /Annot /Subtype /Link /Rect [402 419 447.9 433] /Border [0 0 0] /A << /S /URI /URI (https://folio-c4no.onrender.com/) >> >>
 endobj
 13 0 obj
-<< /Type /Annot /Subtype /Link /Rect [427 380 472.9 393] /Border [0 0 0] /A << /S /URI /URI (https://returntrail.onrender.com/) >> >>
+<< /Type /Annot /Subtype /Link /Rect [477 419 507.6 433] /Border [0 0 0] /A << /S /URI /URI (https://github.com/OM2412/legal-contract-analyzer) >> >>
 endobj
 14 0 obj
-<< /Type /Annot /Subtype /Link /Rect [500 380 520.4 393] /Border [0 0 0] /A << /S /URI /URI (https://github.com/OM2412/ReturnTrail) >> >>
+<< /Type /Annot /Subtype /Link /Rect [402 347 447.9 361] /Border [0 0 0] /A << /S /URI /URI (https://returntrail.onrender.com/) >> >>
 endobj
 15 0 obj
-<< /Type /Annot /Subtype /Link /Rect [427 309 472.9 322] /Border [0 0 0] /A << /S /URI /URI (https://oncetold-y69f.onrender.com/) >> >>
+<< /Type /Annot /Subtype /Link /Rect [477 347 507.6 361] /Border [0 0 0] /A << /S /URI /URI (https://github.com/OM2412/ReturnTrail) >> >>
 endobj
 16 0 obj
-<< /Type /Annot /Subtype /Link /Rect [500 309 520.4 322] /Border [0 0 0] /A << /S /URI /URI (https://github.com/OM2412/OnceTold) >> >>
+<< /Type /Annot /Subtype /Link /Rect [402 275 447.9 289] /Border [0 0 0] /A << /S /URI /URI (https://oncetold-y69f.onrender.com/) >> >>
+endobj
+17 0 obj
+<< /Type /Annot /Subtype /Link /Rect [477 275 507.6 289] /Border [0 0 0] /A << /S /URI /URI (https://github.com/OM2412/OnceTold) >> >>
+endobj
+18 0 obj
+<< /Type /Annot /Subtype /Link /Rect [402 155 493.8 169] /Border [0 0 0] /A << /S /URI /URI (https://www.linkedin.com/in/om-singh-jadon-b92679314/details/certifications/) >> >>
+endobj
+19 0 obj
+<< /Type /Annot /Subtype /Link /Rect [402 136 493.8 150] /Border [0 0 0] /A << /S /URI /URI (https://verify.masaischool.com/certificate/fWhZgtrUaj) >> >>
 endobj
 xref
-0 17
+0 20
 0000000000 65535 f 
 0000000009 00000 n 
 0000000058 00000 n 
 0000000115 00000 n 
-0000000328 00000 n 
-0000005914 00000 n 
-0000005984 00000 n 
-0000006059 00000 n 
-0000006200 00000 n 
-0000006341 00000 n 
-0000006510 00000 n 
-0000006661 00000 n 
-0000006810 00000 n 
-0000006976 00000 n 
-0000007126 00000 n 
-0000007280 00000 n 
-0000007432 00000 n 
+0000000349 00000 n 
+0000005606 00000 n 
+0000005676 00000 n 
+0000005751 00000 n 
+0000005892 00000 n 
+0000006033 00000 n 
+0000006202 00000 n 
+0000006353 00000 n 
+0000006563 00000 n 
+0000006712 00000 n 
+0000006878 00000 n 
+0000007028 00000 n 
+0000007182 00000 n 
+0000007334 00000 n 
+0000007485 00000 n 
+0000007678 00000 n 
 trailer
-<< /Size 17 /Root 1 0 R >>
+<< /Size 20 /Root 1 0 R >>
 startxref
-7583
+7848
 %%EOF
