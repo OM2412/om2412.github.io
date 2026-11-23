@@ -34,7 +34,7 @@ test('new mobile layout and skill section are present', () => {
 
 test('site script uses expected versioned asset references', () => {
   assert.match(html, /styles\.css\?v=9/);
-  assert.match(html, /script\.js\?v=9/);
+  assert.match(html, /script\.js\?v=10/);
   assert.match(html, /<meta name="viewport"/);
 });
 
