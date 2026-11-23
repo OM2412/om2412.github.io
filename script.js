@@ -101,6 +101,7 @@ function renderProjects(profile, catalog) {
     const meta = element('div', 'card-meta'); const status = element('span', 'project-status' + (project.status === 'Hosting paused' ? ' paused' : project.status === 'Deployment planned' ? ' planned' : ''), project.status); meta.append(status, element('span', '', project.category === 'team' ? 'TEAM BUILD' : project.category === 'solo' ? 'SOLO BUILD' : 'ACADEMIC'));
     const caption = element('p', 'card-caption', project.genre); const links = element('div', 'card-links'); links.append(external('Source ↗', project.source));
     if (project.website) { const live = external(project.status.startsWith('Live demo') || project.status === 'Public demo' ? 'Live demo ↗' : 'Website ↗', project.website); if (live) links.append(live); }
+    if (project.preview) { const alternate = external(project.previewLabel || 'Preview ↗', project.preview); if (alternate) links.append(alternate); }
     else { const setup = external('Local setup ↗', project.source + '#readme'); if (setup) links.append(setup); }
     card.append(button, meta, caption, links); reel.append(card);
   });
