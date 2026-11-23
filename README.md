@@ -23,7 +23,7 @@ Featured project dialogs now include structured engineering case studies: proble
 
 ## Automatic updates
 
-A connected ChatGPT background task checks public GitHub metadata daily. Read the complete, constrained writer contract in **[AUTOMATION.md](AUTOMATION.md)**.
+A scheduled GitHub Actions workflow checks public GitHub metadata daily; the old ChatGPT refresh task is no longer active. The implementation and safety contract are in **[AUTOMATION.md](AUTOMATION.md)**. Read the complete, constrained writer contract in **[AUTOMATION.md](AUTOMATION.md)**.
 
 - New eligible public repositories appear in **From GitHub** without hand-editing a project card.
 - Existing repository descriptions, primary language, push dates and published releases can refresh.
@@ -31,10 +31,10 @@ A connected ChatGPT background task checks public GitHub metadata daily. Read th
 - The four featured posters, collaborator credits, detailed claims, certificates and achievements stay curated.
 - For a deployed project, put its HTTPS URL in the GitHub repository's **About → Website** field. The next changed snapshot can add it to a featured project when `allowHomepageSync` is true. A listed website is not a claim of verified uptime.
 - Featured projects have `allowHomepageSync: false` when their deployment URLs are owner-curated; OnceTold and SpiderSense also use curated links; their verified demo URLs are curated, so stale repository metadata cannot restore retired deployment URLs. ReturnTrail and Folio keep their curated deployment URLs in `data/profile.json`; the analyzer preview is not legal advice.
-- The scheduled writer updates only `data/github.json` and commits only when metadata changes. It does not manufacture daily commits merely to refresh a timestamp.
+- The [GitHub snapshot workflow](.github/workflows/github-snapshot.yml) updates only `data/github.json` and commits only when public metadata changes. It does not manufacture daily commits merely to refresh a timestamp.
 - No GitHub token is embedded in the site; visitors request only the saved JSON files from this site. Browser/laptop uptime is not required for the cloud task.
 
-The date on the website is the **saved snapshot date**. Daily checks without source changes do not change that date. Automatic updates depend on the task remaining enabled and the GitHub connection remaining available; GitHub Pages can take several minutes to publish changes.
+The date on the website is the **last changed public-metadata snapshot date**, not necessarily the last successful workflow check. Daily checks without source changes do not change that date. Automatic updates depend on GitHub Actions remaining enabled, the scheduled workflow running successfully, and its built-in token having write permission. The workflow can also be run manually; GitHub Pages can take several minutes to publish changes.
 
 ## Visual project case studies
 
