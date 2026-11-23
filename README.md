@@ -19,7 +19,7 @@ The portrait is in the first screen on desktop and mobile. Work, source links an
 | Legal Contract Analyzer | Academic project | [Live Folio](https://folio-c4no.onrender.com/); not legal advice, verify extracted text |
 | SpiderSense | Shared frontend/backend with Yogesh Sanodiya | Project website and original repository |
 
-Project descriptions and engineering notes are curated. No clients, revenue, awards or impact metrics are fabricated.
+Featured project dialogs now include structured engineering case studies: problem, system architecture, engineering decisions, verification boundaries and next steps. The extra content lives in `data/profile.json`, not in hard-coded HTML. Project descriptions and engineering notes are curated. No clients, revenue, awards or impact metrics are fabricated.
 
 ## Automatic updates
 
