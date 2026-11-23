@@ -24,6 +24,7 @@ jobs:
           node --check script.js
           node --check lib/catalog.mjs
           node --check lib/scene.mjs
+          node --check scripts/sync-github.mjs
       - name: Run content and accessibility regression tests
         run: node --test scripts/*.test.mjs
       - name: Validate curated project JSON
