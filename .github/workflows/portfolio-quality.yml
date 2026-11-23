@@ -1,0 +1,30 @@
+name: Portfolio quality
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  static-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out portfolio
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check JavaScript syntax
+        run: |
+          node --check script.js
+          node --check lib/catalog.mjs
+          node --check lib/scene.mjs
+      - name: Run content and accessibility regression tests
+        run: node --test scripts/*.test.mjs
+      - name: Validate curated project JSON
+        run: node -e "const p=require('./data/profile.json'); if(!Array.isArray(p.projects)||!Array.isArray(p.skills)) process.exit(1); console.log(p.projects.length+' projects, '+p.skills.length+' skill groups');"
