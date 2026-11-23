@@ -1,5 +1,9 @@
 # Om Singh Jadon — The Developer's Cut
 
+> **Current project URLs (2026-11-23 repository documentation):** [Portfolio](https://om2412.github.io/) · [Folio](https://folio-c4no.onrender.com/) · [ReturnTrail](https://returntrail-api.onrender.com/) · [OnceTold](https://oncetold.pages.dev/) · [OnceTold synthetic tour](https://oncetold.pages.dev/demo.html).  
+> These are published targets; this README update does not certify uptime at every third-party host. **Note:** `data/profile.json` contains curated status/preview overrides; updating README links alone does not change the live portfolio cards.
+
+
 **[Explore the portfolio →](https://om2412.github.io/)** · [GitHub profile](https://github.com/OM2412) · [LinkedIn](https://www.linkedin.com/in/om-singh-jadon-b92679314/)
 
 A personal portfolio with an original cinematic direction: crimson light, layered portrait art, an interactive WebGL wire sculpture and film-poster project case studies.
@@ -11,8 +15,8 @@ The portrait is in the first screen on desktop and mobile. Work, source links an
 | Project | Contribution | Deployment presentation |
 | --- | --- | --- |
 | ReturnTrail | Full-stack with Ajeet Gadekar | Public demo and walkthrough |
-| OnceTold | Solo build | [Public demo](https://oncetold-hrma.onrender.com); Render + Neon, fictional data only, free hosting may sleep |
-| Legal Contract Analyzer | Academic project | [Live preview](https://folio-accounts-preview.onrender.com/); not legal advice, verify extracted text |
+| OnceTold | Solo build | [Published app](https://oncetold.pages.dev/) · [Synthetic tour](https://oncetold.pages.dev/demo.html); Render + Neon, fictional data only, free hosting may sleep |
+| Legal Contract Analyzer | Academic project | [Live Folio](https://folio-c4no.onrender.com/); not legal advice, verify extracted text |
 | SpiderSense | Shared frontend/backend with Yogesh Sanodiya | Project website and original repository |
 
 Project descriptions and engineering notes are curated. No clients, revenue, awards or impact metrics are fabricated.
